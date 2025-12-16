@@ -1,0 +1,90 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { CheckCircle } from "lucide-react";
+
+const services = [
+  "Penyelenggaraan Event: Turnamen lokal hingga internasional, perizinan, & venue",
+  "Media & Digital Marketing: Strategi promosi terintegrasi",
+  "Event Activation & Branding: Kolaborasi fisik dan digital",
+  "Logistik & Operasional: Transportasi, akomodasi, dan keamanan",
+];
+
+const advantages = [
+  "Solusi End-to-End",
+  "Berpengalaman Skala Besar",
+  "Pendekatan Kolaboratif",
+];
+
+export default function EOSection() {
+  return (
+    <section id="eo" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Professional Sports Event Organizer
+          </h2>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Layanan Event Organizer untuk perusahaan dan instansi yang ingin
+            mengadakan event olahraga berkualitas
+          </p>
+        </motion.div>
+
+        {/* Layanan Kami */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mb-12"
+        >
+          <h3 className="text-2xl font-semibold text-gray-800 mb-6">
+            Layanan Kami
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="flex items-start p-4 bg-gray-50 border border-gray-300 rounded-md"
+              >
+                <CheckCircle className="h-5 w-5 text-gray-700 mr-3 mt-1 flex-shrink-0" />
+                <span className="text-gray-700">{service}</span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Keunggulan */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <h3 className="text-2xl font-semibold text-gray-800 mb-6">
+            Keunggulan
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {advantages.map((advantage, index) => (
+              <div
+                key={index}
+                className="p-6 bg-gray-50 border border-gray-300 rounded-lg text-center"
+              >
+                <h4 className="text-lg font-semibold text-gray-900">
+                  {advantage}
+                </h4>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
