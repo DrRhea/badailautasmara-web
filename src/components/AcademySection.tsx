@@ -5,13 +5,30 @@ import { Calendar, Clock, MapPin } from "lucide-react";
 
 const GOOGLE_FORM_ACADEMY = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Academy
 
-// Schedule data - bisa diupdate sesuai jadwal yang sebenarnya
+// Schedule data
 const schedule = [
-  { day: "Monday", time: "16:00 - 18:00", venue: "B23 Arena Simprug" },
-  { day: "Wednesday", time: "16:00 - 18:00", venue: "B23 Arena Simprug" },
-  { day: "Friday", time: "16:00 - 18:00", venue: "B23 Arena Simprug" },
-  { day: "Saturday", time: "09:00 - 11:00", venue: "B23 Arena Simprug" },
-  { day: "Sunday", time: "09:00 - 11:00", venue: "B23 Arena Simprug" },
+  { day: "Tuesday", time: "16:00 - 18:00", venue: "Dugout Club Arena BSD" },
+  { day: "Thursday", time: "16:00 - 18:00", venue: "Dugout Club Arena BSD" },
+  { day: "Sunday", time: "08:00 - 10:00", venue: "Dugout Club Arena BSD" },
+  { day: "Wednesday", time: "16:00 - 18:00", venue: "B23 Simprug Arena" },
+  { day: "Saturday", time: "16:00 - 18:00", venue: "B23 Simprug Arena" },
+];
+
+const ageCategories = [
+  "2.5 - 4 years old",
+  "5 - 7 years old",
+  "8 - 10 years old",
+  "11 - 15 years old",
+  "16 - 18 years old",
+];
+
+const pricing = [
+  { package: "Registration", price: "IDR 500.000", note: "Include training kit; 1 set training jersey + socks" },
+  { package: "4 sessions", price: "IDR 800.000", note: "" },
+  { package: "8 sessions", price: "IDR 1.440.000", note: "" },
+  { package: "12 sessions", price: "IDR 1.800.000", note: "" },
+  { package: "24 sessions", price: "IDR 2.880.000", note: "" },
+  { package: "48 sessions", price: "IDR 5.000.000", note: "Free registration" },
 ];
 
 const sports = [
@@ -66,13 +83,36 @@ export default function AcademySection() {
           </div>
         </motion.div>
 
+        {/* Age Categories */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mb-12"
+        >
+          <h3 className="text-xl font-semibold text-gray-800 mb-6">
+            Age Categories:
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {ageCategories.map((age, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-center p-4 bg-gray-50 border border-gray-300 rounded-md"
+              >
+                <span className="text-gray-700 text-center">{age}</span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
         {/* Schedule */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mb-8"
+          className="mb-12"
         >
           <h3 className="text-xl font-semibold text-gray-800 mb-6">
             Training Schedule:
@@ -97,6 +137,50 @@ export default function AcademySection() {
                 </div>
               </div>
             ))}
+          </div>
+        </motion.div>
+
+        {/* Price List */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mb-8"
+        >
+          <h3 className="text-xl font-semibold text-gray-800 mb-6">
+            Price List:
+          </h3>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-white border border-gray-300 rounded-lg">
+              <thead>
+                <tr className="bg-gray-200">
+                  <th className="border border-gray-300 px-6 py-4 text-left text-sm font-semibold text-gray-800">
+                    Package
+                  </th>
+                  <th className="border border-gray-300 px-6 py-4 text-left text-sm font-semibold text-gray-800">
+                    Price
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {pricing.map((item, index) => (
+                  <tr key={index} className="hover:bg-gray-50">
+                    <td className="border border-gray-300 px-6 py-4 text-gray-700">
+                      {item.package}
+                      {item.note && (
+                        <span className="block text-sm text-gray-500 mt-1">
+                          {item.note}
+                        </span>
+                      )}
+                    </td>
+                    <td className="border border-gray-300 px-6 py-4 text-gray-700 font-medium">
+                      {item.price}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </motion.div>
 
