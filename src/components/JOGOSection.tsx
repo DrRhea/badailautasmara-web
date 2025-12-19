@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 const GOOGLE_FORM_PRIVATE = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Private
 
 const pricing = [
-  { type: "Trial Session", price: "IDR 150.000", per: "/ player" },
-  { type: "Small Group", price: "IDR 200.000", per: "/ player" },
-  { type: "Couple Training", price: "IDR 250.000", per: "/ player" },
-  { type: "Single Visit / Private", price: "IDR 300.000", per: "" },
+  { type: "Trial Session", price: "IDR 150.000", per: "/ player", note: "" },
+  { type: "Small Group", price: "IDR 200.000", per: "/ player", note: "(3-6 participant)" },
+  { type: "Couple Training", price: "IDR 250.000", per: "/ player", note: "" },
+  { type: "Single Visit / Private", price: "IDR 300.000", per: "", note: "" },
 ];
 
 export default function JOGOSection() {
@@ -59,6 +59,11 @@ export default function JOGOSection() {
                   <tr key={index} className="hover:bg-gray-50">
                     <td className="border border-gray-300 px-6 py-4 text-gray-700">
                       {item.type}
+                      {item.note && (
+                        <span className="block text-sm text-gray-500 mt-1">
+                          {item.note}
+                        </span>
+                      )}
                     </td>
                     <td className="border border-gray-300 px-6 py-4 text-gray-700 font-medium">
                       {item.price} {item.per}
