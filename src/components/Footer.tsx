@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Phone, MapPin, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Music } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -38,10 +38,10 @@ export default function Footer() {
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 flex-shrink-0" />
                 <a
-                  href="tel:+628118139943"
+                  href="tel:+6281188022607"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  +62 811 8139 943
+                  +62 811 8802 2607
                 </a>
               </div>
               <div className="flex items-center">
@@ -61,26 +61,24 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-white mb-4">
               Social Media
             </h3>
-            <div className="flex space-x-4">
+            <div className="space-y-3">
               <a
-                href="https://instagram.com/b23.arenaofficial"
+                href="https://instagram.com/jfa.idn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-300 hover:text-white transition-colors"
               >
                 <Instagram className="h-5 w-5 mr-2" />
-                <span className="text-sm">@b23.arenaofficial</span>
+                <span className="text-sm">@jfa.idn</span>
               </a>
-            </div>
-            <div className="flex space-x-4 mt-2">
               <a
-                href="https://instagram.com/volkiessoccer"
+                href="https://tiktok.com/@jogoprivatetraining"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-300 hover:text-white transition-colors"
               >
-                <Instagram className="h-5 w-5 mr-2" />
-                <span className="text-sm">@volkiessoccer</span>
+                <Music className="h-5 w-5 mr-2" />
+                <span className="text-sm">@jogoprivatetraining</span>
               </a>
             </div>
           </div>
