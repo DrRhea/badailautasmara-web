@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "PT Badai Laut Asmara - JOGO Academy & Event Organizer",
   description: "Solusi Olahraga Terintegrasi: Pelatihan Profesional & Event Organizer Berkelas",
+  icons: {
+    icon: "/logos/logo-pt-badai-laut-asmara.png",
+    apple: "/logos/logo-pt-badai-laut-asmara.png",
+  },
 };
 
 export default function RootLayout({
