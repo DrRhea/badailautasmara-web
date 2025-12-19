@@ -1,11 +1,23 @@
 "use client";
 
 import { Mail, Phone, MapPin, Instagram } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="bg-gray-800 text-gray-200 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Logo Footer */}
+        <div className="mb-8">
+          <Image
+            src="/logos/logo-pt-badai-laut-asmara-white.png"
+            alt="PT Badai Laut Asmara"
+            width={180}
+            height={50}
+            className="h-12 w-auto object-contain"
+          />
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Alamat */}
           <div>

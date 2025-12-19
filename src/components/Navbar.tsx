@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const GOOGLE_FORM_URL = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form Fathan
 
@@ -23,8 +24,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#beranda" className="text-lg font-bold text-gray-800">
-              PT Badai Laut Asmara / JOGO
+            <a href="#beranda" className="flex items-center">
+              <Image
+                src="/logos/logo-pt-badai-laut-asmara.png"
+                alt="PT Badai Laut Asmara"
+                width={180}
+                height={50}
+                className="h-12 w-auto object-contain"
+                priority
+              />
             </a>
           </div>
 

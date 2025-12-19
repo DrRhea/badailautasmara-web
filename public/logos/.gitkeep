@@ -1,0 +1,26 @@
+# Folder untuk menyimpan logo PT Badai Laut Asmara
+
+Silakan simpan file logo di folder ini.
+Format yang disarankan: PNG, SVG, atau JPG
+
+## Nama File yang Digunakan:
+
+### Untuk Navbar (Header):
+- **logo-pt-badai-laut-asmara.png** - Logo utama untuk header (background putih)
+
+### Untuk Footer:
+- **logo-pt-badai-laut-asmara-white.png** - Logo versi putih untuk footer (background gelap)
+- Jika tidak ada versi putih, bisa menggunakan logo biasa
+
+## Cara Menggunakan:
+
+Setelah logo di-upload ke folder ini, logo akan otomatis muncul di:
+1. **Navbar** (Header) - menggunakan `/logos/logo-pt-badai-laut-asmara.png`
+2. **Footer** - menggunakan `/logos/logo-pt-badai-laut-asmara-white.png`
+
+## Catatan:
+
+- Pastikan ukuran logo tidak terlalu besar (disarankan max 500KB)
+- Untuk logo di header, gunakan format PNG dengan background transparan
+- Untuk logo di footer, gunakan versi putih atau terang agar kontras dengan background gelap
+
