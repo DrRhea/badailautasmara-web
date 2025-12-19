@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import AcademySection from "@/components/AcademySection";
 import JOGOSection from "@/components/JOGOSection";
 import CoachesSection from "@/components/CoachesSection";
 import EOSection from "@/components/EOSection";
@@ -11,6 +12,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-100">
       <Navbar />
       <Hero />
+      <AcademySection />
       <JOGOSection />
       <CoachesSection />
       <EOSection />

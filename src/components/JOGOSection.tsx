@@ -1,17 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle } from "lucide-react";
 
-const GOOGLE_FORM_URL = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form Fathan
-
-const sports = [
-  "Football",
-  "Basketball",
-  "Badminton",
-  "Swimming",
-  "Cricket & Kick Boxing",
-];
+const GOOGLE_FORM_PRIVATE = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Private
 
 const pricing = [
   { type: "Trial Session", price: "IDR 150.000", per: "/ player" },
@@ -22,7 +13,7 @@ const pricing = [
 
 export default function JOGOSection() {
   return (
-    <section id="jogo" className="py-20 bg-white">
+    <section id="private" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,36 +23,12 @@ export default function JOGOSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Training Programs & Private Training
+            JOGO Private Training
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Intensive training supported by coaches with Sports Science
-            degrees
+            Personalized one-on-one or small group training sessions tailored
+            to your needs
           </p>
-        </motion.div>
-
-        {/* Cabang Olahraga */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-12"
-        >
-          <h3 className="text-xl font-semibold text-gray-800 mb-6">
-            Available Sports:
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {sports.map((sport, index) => (
-              <div
-                key={index}
-                className="flex items-center p-4 bg-gray-50 border border-gray-300 rounded-md"
-              >
-                <CheckCircle className="h-5 w-5 text-gray-700 mr-3 flex-shrink-0" />
-                <span className="text-gray-700">{sport}</span>
-              </div>
-            ))}
-          </div>
         </motion.div>
 
         {/* Tabel Harga */}
@@ -112,12 +79,12 @@ export default function JOGOSection() {
           className="text-center"
         >
           <a
-            href={GOOGLE_FORM_URL}
+            href={GOOGLE_FORM_PRIVATE}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gray-800 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-900 transition-colors"
           >
-            Register Now
+            Register for Private Training
           </a>
         </motion.div>
       </div>

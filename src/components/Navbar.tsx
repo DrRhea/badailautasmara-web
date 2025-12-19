@@ -12,7 +12,8 @@ export default function Navbar() {
 
   const menuItems = [
     { name: "Home", href: "#home" },
-    { name: "JOGO Academy & Private", href: "#jogo" },
+    { name: "Academy", href: "#academy" },
+    { name: "Private Training", href: "#private" },
     { name: "Event Organizer", href: "#eo" },
     { name: "Coach Profile", href: "#coach" },
     { name: "Portfolio & Gallery", href: "#portfolio" },

@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
+const GOOGLE_FORM_EVENT = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Event
+
 const services = [
   "Event Management: Local to international tournaments, permits, & venues",
   "Media & Digital Marketing: Integrated promotion strategies",
@@ -82,6 +84,24 @@ export default function EOSection() {
               </div>
             ))}
           </div>
+        </motion.div>
+
+        {/* CTA Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="text-center mt-12"
+        >
+          <a
+            href={GOOGLE_FORM_EVENT}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gray-800 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-900 transition-colors"
+          >
+            Inquire Event Services
+          </a>
         </motion.div>
       </div>
     </section>

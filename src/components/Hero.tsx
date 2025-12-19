@@ -3,7 +3,9 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-const GOOGLE_FORM_URL = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form Fathan
+const GOOGLE_FORM_ACADEMY = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Academy
+const GOOGLE_FORM_PRIVATE = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Private
+const GOOGLE_FORM_EVENT = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Event
 
 export default function Hero() {
   return (
@@ -40,19 +42,24 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href={GOOGLE_FORM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#academy"
               className="inline-flex items-center justify-center bg-gray-800 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-900 transition-colors"
             >
-              Register Training (JOGO)
+              Academy
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+            <a
+              href="#private"
+              className="inline-flex items-center justify-center bg-gray-800 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-900 transition-colors"
+            >
+              Private Training
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
             <a
               href="#eo"
               className="inline-flex items-center justify-center bg-white text-gray-800 border-2 border-gray-300 px-8 py-3 rounded-md font-medium hover:bg-gray-50 transition-colors"
             >
-              View EO Services
+              Event Organizer
             </a>
           </motion.div>
 
