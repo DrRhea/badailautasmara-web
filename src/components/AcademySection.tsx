@@ -19,7 +19,8 @@ const sports = [
   "Basketball",
   "Badminton",
   "Swimming",
-  "Cricket & Kick Boxing",
+  "Cricket",
+  "Kick Boxing",
 ];
 
 export default function AcademySection() {
