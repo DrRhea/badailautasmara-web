@@ -19,11 +19,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
           >
-            Integrated Sports Solutions:
-            <br />
-            <span className="text-gray-700">
-              Professional Training & Premium Event Organizer
-            </span>
+            One Integrated Sports Platform
           </motion.h1>
 
           <motion.p
@@ -32,8 +28,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-10"
           >
-            Building the next generation of athletes with <strong>JOGO</strong> and creating
-            spectacular sports events with <strong>PT Badai Laut Asmara</strong>.
+            From elite athlete development with <strong>JOGO</strong>
+            to premium sports event management by <strong>PT Badai Laut Asmara</strong> —
+            we deliver excellence on and off the field.
           </motion.p>
 
           <motion.div
