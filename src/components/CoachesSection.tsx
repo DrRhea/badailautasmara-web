@@ -45,8 +45,8 @@ export default function CoachesSection() {
             Meet The Coaches
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Tim pelatih profesional dengan latar belakang pendidikan Ilmu
-            Keolahragaan
+            Professional coaching team with Sports Science
+            educational background
           </p>
         </motion.div>
 
@@ -74,7 +74,7 @@ export default function CoachesSection() {
               {coach.specialization.length > 0 && (
                 <div className="mt-4">
                   <p className="text-sm font-medium text-gray-700 mb-2">
-                    Spesialis:
+                    Specialization:
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {coach.specialization.map((spec, idx) => (

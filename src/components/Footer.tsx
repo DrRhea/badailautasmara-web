@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Alamat */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Alamat</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Address</h3>
             <div className="flex items-start">
               <MapPin className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
               <p className="text-gray-300">
@@ -33,7 +33,7 @@ export default function Footer() {
 
           {/* Kontak */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Kontak</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 flex-shrink-0" />

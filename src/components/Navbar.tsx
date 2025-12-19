@@ -11,11 +11,11 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: "Beranda", href: "#beranda" },
+    { name: "Home", href: "#home" },
     { name: "JOGO Academy & Private", href: "#jogo" },
     { name: "Event Organizer", href: "#eo" },
     { name: "Coach Profile", href: "#coach" },
-    { name: "Portfolio & Galeri", href: "#portfolio" },
+    { name: "Portfolio & Gallery", href: "#portfolio" },
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#beranda" className="flex items-center">
+            <a href="#home" className="flex items-center">
               <Image
                 src="/logos/logo-pt-badai-laut-asmara.png"
                 alt="PT Badai Laut Asmara"
@@ -57,7 +57,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="bg-gray-800 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-gray-900 transition-colors"
             >
-              DAFTAR SEKARANG
+              REGISTER NOW
             </a>
           </div>
 
@@ -99,7 +99,7 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
               className="block mt-4 bg-gray-800 text-white px-6 py-2 rounded-md text-center text-sm font-medium hover:bg-gray-900"
             >
-              DAFTAR SEKARANG
+              REGISTER NOW
             </a>
           </div>
         </motion.div>

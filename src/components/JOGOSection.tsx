@@ -6,10 +6,10 @@ import { CheckCircle } from "lucide-react";
 const GOOGLE_FORM_URL = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form Fathan
 
 const sports = [
-  "Sepak Bola (Football)",
-  "Basket (Basketball)",
-  "Bulutangkis (Badminton)",
-  "Renang (Swimming)",
+  "Football",
+  "Basketball",
+  "Badminton",
+  "Swimming",
   "Cricket & Kick Boxing",
 ];
 
@@ -32,11 +32,11 @@ export default function JOGOSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Program Latihan & Private Training
+            Training Programs & Private Training
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Pelatihan intensif didukung oleh pelatih lulusan Sarjana Ilmu
-            Keolahragaan (Sports Science)
+            Intensive training supported by coaches with Sports Science
+            degrees
           </p>
         </motion.div>
 
@@ -49,7 +49,7 @@ export default function JOGOSection() {
           className="mb-12"
         >
           <h3 className="text-xl font-semibold text-gray-800 mb-6">
-            Cabang Olahraga Tersedia:
+            Available Sports:
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {sports.map((sport, index) => (
@@ -73,17 +73,17 @@ export default function JOGOSection() {
           className="mb-8"
         >
           <h3 className="text-xl font-semibold text-gray-800 mb-6">
-            JOGO Private Training - Harga:
+            JOGO Private Training - Pricing:
           </h3>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse bg-white border border-gray-300 rounded-lg">
               <thead>
                 <tr className="bg-gray-200">
                   <th className="border border-gray-300 px-6 py-4 text-left text-sm font-semibold text-gray-800">
-                    Paket
+                    Package
                   </th>
                   <th className="border border-gray-300 px-6 py-4 text-left text-sm font-semibold text-gray-800">
-                    Harga
+                    Price
                   </th>
                 </tr>
               </thead>
@@ -117,7 +117,7 @@ export default function JOGOSection() {
             rel="noopener noreferrer"
             className="inline-block bg-gray-800 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-900 transition-colors"
           >
-            Daftar Sekarang
+            Register Now
           </a>
         </motion.div>
       </div>

@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
 const services = [
-  "Penyelenggaraan Event: Turnamen lokal hingga internasional, perizinan, & venue",
-  "Media & Digital Marketing: Strategi promosi terintegrasi",
-  "Event Activation & Branding: Kolaborasi fisik dan digital",
-  "Logistik & Operasional: Transportasi, akomodasi, dan keamanan",
+  "Event Management: Local to international tournaments, permits, & venues",
+  "Media & Digital Marketing: Integrated promotion strategies",
+  "Event Activation & Branding: Physical and digital collaboration",
+  "Logistics & Operations: Transportation, accommodation, and security",
 ];
 
 const advantages = [
-  "Solusi End-to-End",
-  "Berpengalaman Skala Besar",
-  "Pendekatan Kolaboratif",
+  "End-to-End Solutions",
+  "Large-Scale Experience",
+  "Collaborative Approach",
 ];
 
 export default function EOSection() {
@@ -31,8 +31,8 @@ export default function EOSection() {
             Professional Sports Event Organizer
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Layanan Event Organizer untuk perusahaan dan instansi yang ingin
-            mengadakan event olahraga berkualitas
+            Event Organizer services for companies and institutions looking to
+            host quality sports events
           </p>
         </motion.div>
 
@@ -45,7 +45,7 @@ export default function EOSection() {
           className="mb-12"
         >
           <h3 className="text-2xl font-semibold text-gray-800 mb-6">
-            Layanan Kami
+            Our Services
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {services.map((service, index) => (
@@ -68,7 +68,7 @@ export default function EOSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <h3 className="text-2xl font-semibold text-gray-800 mb-6">
-            Keunggulan
+            Advantages
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {advantages.map((advantage, index) => (

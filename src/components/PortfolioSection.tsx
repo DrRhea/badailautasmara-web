@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const portfolios = [
   {
     title: "BTN Jakarta Run",
-    description: "Event lari skala besar",
+    description: "Large-scale running event",
   },
   {
     title: "Abnon Olahraga Activities",
@@ -16,7 +16,7 @@ const portfolios = [
     description: "International Basketball Event",
   },
   {
-    title: "Kerjasama dengan Kedutaan Turki",
+    title: "Collaboration with Turkish Embassy",
     description: "29 Ekim Event",
   },
 ];
@@ -36,7 +36,7 @@ export default function PortfolioSection() {
             Portfolio Highlights
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Event-event sukses yang telah kami selenggarakan
+            Successful events we have organized
           </p>
         </motion.div>
 
