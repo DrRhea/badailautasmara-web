@@ -30,7 +30,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-10"
           >
-            From elite athlete development with <strong>JOGO</strong>
+            From elite athlete development with <strong>JOGO</strong>{" "}
             to premium sports event management by <strong>PT Badai Laut Asmara</strong> —
             we deliver excellence on and off the field.
           </motion.p>
