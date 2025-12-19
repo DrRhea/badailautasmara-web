@@ -10,17 +10,17 @@ const coaches = [
   },
   {
     name: "Muhammad Fahrul Saputra",
-    role: "Coach - UNJ Sports Science",
+    role: "Coach - Universitas Negeri Jakarta Sports Science",
     specialization: ["Football", "Swimming", "Basket", "Badminton"],
   },
   {
     name: "Raihan Eka Putra",
-    role: "Coach - Unpam Sports Science",
+    role: "Coach - Universitas Pamulang Sports Science",
     specialization: ["Football", "Basket", "Kick Boxing"],
   },
   {
     name: "Asmin Syahrul Aziz",
-    role: "Coach - Unpam Sports Science",
+    role: "Coach - Universitas Pamulang Sports Science",
     specialization: ["Basket", "Badminton", "Swimming"],
   },
   {
