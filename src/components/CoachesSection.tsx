@@ -9,7 +9,7 @@ const coaches = [
     specialization: [],
   },
   {
-    name: "Muhammad Fahrul Saputra",
+    name: "Muhhamad Fahrul Saputra",
     role: "Coach - Universitas Negeri Jakarta Sports Science",
     specialization: ["Football", "Swimming", "Basket", "Badminton"],
   },
