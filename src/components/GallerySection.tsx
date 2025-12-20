@@ -3,12 +3,17 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-// Array untuk foto galeri - akan diisi setelah foto di-upload
-// Format: { src: "/images/gallery/nama-file.jpg", alt: "Description" }
+// Array untuk foto galeri
 const galleryImages = [
-  // Contoh - akan diisi dengan foto yang di-upload
-  // { src: "/images/gallery/photo1.jpg", alt: "Event Photo 1" },
-  // { src: "/images/gallery/photo2.jpg", alt: "Event Photo 2" },
+  { src: "/images/gallery/gallery-1.png", alt: "JOGO Training Session" },
+  { src: "/images/gallery/gallery-2.png", alt: "Football Training" },
+  { src: "/images/gallery/gallery-3.png", alt: "Football Match Action" },
+  { src: "/images/gallery/gallery-4.png", alt: "Team Celebration" },
+  { src: "/images/gallery/gallery-5.png", alt: "Football Player" },
+  { src: "/images/gallery/gallery-6.png", alt: "Swimming Training" },
+  { src: "/images/gallery/gallery-7.png", alt: "Swimming Session" },
+  { src: "/images/gallery/gallery-8.png", alt: "Football Player - JOGO" },
+  { src: "/images/gallery/gallery-9.png", alt: "Football Training Session" },
 ];
 
 export default function GallerySection() {

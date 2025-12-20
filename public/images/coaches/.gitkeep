@@ -1,0 +1,23 @@
+# Folder untuk menyimpan foto Coach
+
+Silakan simpan file foto coach di folder ini.
+Format yang disarankan: JPG, PNG, atau WebP
+
+## Nama File yang Disarankan:
+
+Berdasarkan daftar coach di CoachesSection.tsx:
+- swara-andhika-emil.jpg (Founder & Owner)
+- muhhamad-fahrul-saputra.jpg (Coach - Universitas Negeri Jakarta Sports Science)
+- raihan-eka-putra.jpg (Coach - Universitas Pamulang Sports Science)
+- asmin-syahrul-aziz.jpg (Coach - Universitas Pamulang Sports Science)
+- teguh-dwi-andhika.jpg (Coach - English Science)
+
+Setelah foto di-upload, bisa digunakan di komponen CoachesSection dengan path:
+- `/images/coaches/nama-file-coach.jpg`
+
+## Catatan:
+- Pastikan ukuran foto tidak terlalu besar (disarankan max 500KB)
+- Format PNG atau JPG dengan background transparan atau solid
+- Resolusi disarankan: 400x400 atau lebih besar untuk kualitas yang baik
+- Foto akan ditampilkan dalam bentuk circular (rounded-full)
+
