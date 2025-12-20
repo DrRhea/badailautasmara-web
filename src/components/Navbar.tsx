@@ -16,7 +16,8 @@ export default function Navbar() {
     { name: "Private Training", href: "#private" },
     { name: "Event Organizer", href: "#eo" },
     { name: "Coach Profile", href: "#coach" },
-    { name: "Portfolio & Gallery", href: "#portfolio" },
+    { name: "Portfolio", href: "#portfolio" },
+    { name: "Gallery", href: "#gallery" },
   ];
 
   return (

@@ -1,0 +1,13 @@
+# Folder untuk menyimpan foto galeri
+
+Silakan simpan file foto galeri di folder ini.
+Format yang disarankan: JPG, PNG, atau WebP
+
+Setelah foto di-upload, bisa digunakan di komponen Gallery dengan path:
+- `/images/gallery/nama-file-foto.jpg`
+
+## Catatan:
+- Pastikan ukuran foto tidak terlalu besar (disarankan max 1MB per foto untuk performa)
+- Format WebP direkomendasikan untuk ukuran file yang lebih kecil
+- Resolusi disarankan: 1200x800 atau lebih besar untuk kualitas yang baik
+

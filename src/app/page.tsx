@@ -5,6 +5,7 @@ import JOGOSection from "@/components/JOGOSection";
 import CoachesSection from "@/components/CoachesSection";
 import EOSection from "@/components/EOSection";
 import PortfolioSection from "@/components/PortfolioSection";
+import GallerySection from "@/components/GallerySection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <CoachesSection />
       <EOSection />
       <PortfolioSection />
+      <GallerySection />
       <Footer />
     </div>
   );
