@@ -1,0 +1,18 @@
+# Folder untuk menyimpan foto background Hero Section
+
+Silakan simpan file gambar background hero di folder ini.
+Format yang disarankan: JPG, PNG, atau WebP
+
+Contoh nama file:
+- hero-background.jpg
+- hero-bg-b23-arena.jpg
+- hero-bg-btn-jakarta-run.jpg
+
+Setelah gambar di-upload, bisa digunakan di komponen Hero dengan path:
+- `/images/hero/nama-file-gambar.jpg`
+
+## Catatan:
+- Pastikan ukuran gambar tidak terlalu besar (disarankan max 2MB untuk performa)
+- Format WebP direkomendasikan untuk ukuran file yang lebih kecil
+- Resolusi disarankan: 1920x1080 atau lebih besar untuk kualitas yang baik
+
