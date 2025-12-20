@@ -1,32 +1,38 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const coaches = [
   {
     name: "Swara Andhika Emil",
     role: "Founder & Owner",
     specialization: [],
+    photo: "/images/coaches/swara-andhika-emil.png",
   },
   {
     name: "Muhhamad Fahrul Saputra",
     role: "Coach - Universitas Negeri Jakarta Sports Science",
     specialization: ["Football", "Swimming", "Basket", "Badminton"],
+    photo: null,
   },
   {
     name: "Raihan Eka Putra",
     role: "Coach - Universitas Pamulang Sports Science",
     specialization: ["Football", "Basket", "Kick Boxing"],
+    photo: null,
   },
   {
     name: "Asmin Syahrul Aziz",
     role: "Coach - Universitas Pamulang Sports Science",
     specialization: ["Basket", "Badminton", "Swimming"],
+    photo: null,
   },
   {
     name: "Teguh Dwi Andhika",
     role: "Coach - English Science",
     specialization: [],
+    photo: null,
   },
 ];
 
@@ -73,8 +79,18 @@ export default function CoachesSection() {
                 style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}
               >
                 <div className="mb-4">
-                  <div className="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-dashed" style={{ backgroundColor: 'rgba(139, 21, 56, 0.1)', borderColor: '#8B1538' }}>
-                    <span className="text-xs text-center" style={{ color: '#8B1538', opacity: 0.7 }}>Photo</span>
+                  <div className="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center border-2 overflow-hidden" style={{ borderColor: '#8B1538', backgroundColor: 'rgba(139, 21, 56, 0.1)' }}>
+                    {coach.photo ? (
+                      <Image
+                        src={coach.photo}
+                        alt={coach.name}
+                        width={96}
+                        height={96}
+                        className="w-full h-full object-cover rounded-full"
+                      />
+                    ) : (
+                      <span className="text-xs text-center" style={{ color: '#8B1538', opacity: 0.7 }}>Photo</span>
+                    )}
                   </div>
                   <h3 className="text-xl font-semibold text-center" style={{ color: '#8B1538' }}>
                     {coach.name}
