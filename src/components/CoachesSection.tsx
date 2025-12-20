@@ -14,7 +14,7 @@ const coaches = [
     name: "Muhhamad Fahrul Saputra",
     role: "Coach - Universitas Negeri Jakarta Sports Science",
     specialization: ["Football", "Swimming", "Basket", "Badminton"],
-    photo: null,
+    photo: "/images/coaches/muhhamad-fahrul-saputra.png",
   },
   {
     name: "Raihan Eka Putra",
