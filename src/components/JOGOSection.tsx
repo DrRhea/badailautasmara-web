@@ -4,11 +4,20 @@ import { motion } from "framer-motion";
 
 const GOOGLE_FORM_PRIVATE = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Private
 
+const sports = [
+  "Football",
+  "Basketball",
+  "Badminton",
+  "Swimming",
+  "Cricket",
+  "Kick Boxing",
+];
+
 const pricing = [
-  { type: "Trial Session", price: "IDR 150.000", per: "/ player", note: "" },
-  { type: "Small Group", price: "IDR 200.000", per: "/ player", note: "(3-6 participant)" },
-  { type: "Couple Training", price: "IDR 250.000", per: "/ player", note: "" },
-  { type: "Single Visit / Private", price: "IDR 300.000", per: "", note: "" },
+  { type: "Trial Session", price: "IDR 150,000", per: "/ player", note: "" },
+  { type: "Small Group", price: "IDR 200,000", per: "/ player", note: "(3-6 participant)" },
+  { type: "Couple Training", price: "IDR 250,000", per: "/ player", note: "" },
+  { type: "Single Visit / Private", price: "IDR 300,000", per: "", note: "" },
 ];
 
 export default function JOGOSection() {
@@ -29,6 +38,30 @@ export default function JOGOSection() {
             Personalized one-on-one or small group training sessions tailored
             to your needs
           </p>
+        </motion.div>
+
+        {/* Available Sports */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mb-12"
+        >
+          <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
+            Available Sports:
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {sports.map((sport, index) => (
+              <div
+                key={index}
+                className="flex items-center p-4 rounded-xl border"
+                style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538', color: '#8B1538' }}
+              >
+                <span style={{ color: '#8B1538' }}>{sport}</span>
+              </div>
+            ))}
+          </div>
         </motion.div>
 
         {/* Tabel Harga */}
