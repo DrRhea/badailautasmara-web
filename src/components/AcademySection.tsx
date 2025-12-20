@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Calendar, Clock, MapPin } from "lucide-react";
+import Image from "next/image";
 
 const GOOGLE_FORM_ACADEMY = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Academy
 
@@ -42,6 +43,17 @@ export default function AcademySection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/logos/logo-jogo.png"
+              alt="JOGO Logo"
+              width={200}
+              height={200}
+              className="object-contain"
+              priority
+              unoptimized
+            />
+          </div>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#8B1538' }}>
             JOGO Academy
           </h2>

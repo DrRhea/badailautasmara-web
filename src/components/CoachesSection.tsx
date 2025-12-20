@@ -6,33 +6,73 @@ import Image from "next/image";
 const coaches = [
   {
     name: "Swara Andhika Emil",
-    role: "Founder & Owner",
+    university: "Universitas Indonesia",
+    major: "Dutch Literature",
+    role: "Founder & Owner of JOGO",
+    additionalRoles: [
+      "President Director at PT BADAI LAUT ASMARA",
+      "Chairman of Yayasan Abang None Jakarta Olahraga",
+      "President of Pemuda Olahraga Bersatu",
+      "Indonesian - Actor"
+    ],
     specialization: [],
     photo: "/images/coaches/swara-andhika-emil.png",
   },
   {
     name: "Muhhamad Fahrul Saputra",
-    role: "Coach - Universitas Negeri Jakarta Sports Science",
-    specialization: ["Football", "Swimming", "Basket", "Badminton"],
+    university: "Universitas Negeri Jakarta",
+    major: "Sports Science - Bachelor Degree",
+    role: "Coach - Indonesian",
+    specialization: ["Football", "Swimming", "Basketball", "Badminton"],
     photo: "/images/coaches/muhhamad-fahrul-saputra.png",
   },
   {
     name: "Raihan Eka Putra",
-    role: "Coach - Universitas Pamulang Sports Science",
-    specialization: ["Football", "Basket", "Kick Boxing"],
-    photo: null,
+    university: "Universitas Pamulang",
+    major: "Sports Science - Bachelor Degree",
+    role: "Coach - Indonesian",
+    specialization: ["Football", "Basketball", "Kick Boxing"],
+    photo: "/images/coaches/raihan-eka-putra.png",
   },
   {
     name: "Asmin Syahrul Aziz",
-    role: "Coach - Universitas Pamulang Sports Science",
-    specialization: ["Basket", "Badminton", "Swimming"],
-    photo: null,
+    university: "Universitas Pamulang",
+    major: "Sports Science - Bachelor Degree",
+    role: "Coach - Indonesian",
+    specialization: ["Basketball", "Badminton", "Swimming"],
+    photo: "/images/coaches/asmin-syahrul-aziz.png",
   },
   {
     name: "Teguh Dwi Andhika",
-    role: "Coach - English Science",
-    specialization: [],
-    photo: null,
+    university: "Universitas Pamulang",
+    major: "English Science - Bachelor Degree",
+    role: "Coach - Indonesian",
+    specialization: ["Football", "Kick Boxing", "Basketball"],
+    photo: "/images/coaches/teguh-dwi-andhika.png",
+  },
+  {
+    name: "Muhammad Naufal Tarmizi",
+    university: "Universitas Pamulang",
+    major: "Sports Science - Bachelor Degree",
+    role: "Coach - Indonesian",
+    specialization: ["Football"],
+    photo: "/images/coaches/muhammad-naufal-tarmizi.png",
+  },
+  {
+    name: "Faqih Anwar Rudin",
+    university: "Universitas Pamulang",
+    major: "Sports Science - Bachelor Degree",
+    role: "Coach - Indonesian",
+    specialization: ["Football", "Basketball"],
+    photo: "/images/coaches/faqih-anwar-rudin.png",
+  },
+  {
+    name: "Ardian Syah Harahap",
+    university: "Universitas Pamulang",
+    major: "Sports Science - Bachelor Degree",
+    role: "Coach - Indonesian",
+    specialization: ["Football", "Kick Boxing"],
+    photo: "/images/coaches/ardian-syah-harahap.png",
   },
 ];
 
@@ -86,7 +126,7 @@ export default function CoachesSection() {
                         alt={coach.name}
                         width={96}
                         height={96}
-                        className="w-full h-full object-cover rounded-full"
+                        className="w-full h-full object-cover object-top rounded-full"
                       />
                     ) : (
                       <span className="text-xs text-center" style={{ color: '#8B1538', opacity: 0.7 }}>Photo</span>
@@ -95,14 +135,33 @@ export default function CoachesSection() {
                   <h3 className="text-xl font-semibold text-center" style={{ color: '#8B1538' }}>
                     {coach.name}
                   </h3>
-                  <p className="text-sm text-center mt-1" style={{ color: '#8B1538', opacity: 0.8 }}>
+                  {coach.university && (
+                    <p className="text-xs text-center mt-1" style={{ color: '#8B1538', opacity: 0.7 }}>
+                      {coach.university}
+                    </p>
+                  )}
+                  {coach.major && (
+                    <p className="text-xs text-center mt-0.5" style={{ color: '#8B1538', opacity: 0.7 }}>
+                      {coach.major}
+                    </p>
+                  )}
+                  <p className="text-sm text-center mt-2 font-medium" style={{ color: '#8B1538', opacity: 0.9 }}>
                     {coach.role}
                   </p>
+                  {coach.additionalRoles && coach.additionalRoles.length > 0 && (
+                    <div className="mt-2 space-y-1">
+                      {coach.additionalRoles.map((additionalRole, idx) => (
+                        <p key={idx} className="text-xs text-center" style={{ color: '#8B1538', opacity: 0.7 }}>
+                          {additionalRole}
+                        </p>
+                      ))}
+                    </div>
+                  )}
                 </div>
                 {coach.specialization.length > 0 && (
                   <div className="mt-4">
                     <p className="text-sm font-medium mb-2" style={{ color: '#8B1538' }}>
-                      Specialization:
+                      Specialties:
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {coach.specialization.map((spec, idx) => (
