@@ -11,7 +11,8 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="pt-16 min-h-screen flex items-center justify-center bg-gray-100"
+      className="pt-16 min-h-screen flex items-center justify-center"
+      style={{ backgroundColor: '#FAFAF5' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
@@ -19,7 +20,8 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
+            style={{ color: '#8B1538' }}
           >
             One Integrated Sports Platform
           </motion.h1>
@@ -28,7 +30,8 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-10"
+            className="text-lg sm:text-xl max-w-3xl mx-auto mb-10"
+            style={{ color: '#333333' }}
           >
             From elite athlete development with <strong>JOGO</strong>{" "}
             to premium sports event management by <strong>PT Badai Laut Asmara</strong> —
@@ -43,21 +46,40 @@ export default function Hero() {
           >
             <a
               href="#academy"
-              className="inline-flex items-center justify-center bg-gray-800 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-900 transition-colors"
+              className="inline-flex items-center justify-center text-white px-8 py-3 rounded-md font-medium transition-colors"
+              style={{ backgroundColor: '#8B1538' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
             >
               Academy
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
             <a
               href="#private"
-              className="inline-flex items-center justify-center bg-gray-800 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-900 transition-colors"
+              className="inline-flex items-center justify-center text-white px-8 py-3 rounded-md font-medium transition-colors"
+              style={{ backgroundColor: '#8B1538' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
             >
               Private Training
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
             <a
               href="#eo"
-              className="inline-flex items-center justify-center bg-white text-gray-800 border-2 border-gray-300 px-8 py-3 rounded-md font-medium hover:bg-gray-50 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-3 rounded-md font-medium transition-colors"
+              style={{ 
+                backgroundColor: '#FAFAF5',
+                color: '#8B1538',
+                border: '2px solid #8B1538'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#8B1538';
+                e.currentTarget.style.color = '#FAFAF5';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#FAFAF5';
+                e.currentTarget.style.color = '#8B1538';
+              }}
             >
               Event Organizer
             </a>
