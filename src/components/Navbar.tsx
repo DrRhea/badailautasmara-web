@@ -20,7 +20,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-300 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b shadow-sm" style={{ backgroundColor: 'rgba(250, 250, 245, 0.9)', borderColor: 'rgba(139, 21, 56, 0.2)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -43,7 +43,10 @@ export default function Navbar() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="px-3 py-2 text-sm font-medium transition-colors"
+                style={{ color: '#8B1538' }}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#6B0F2A'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#8B1538'}
               >
                 {item.name}
               </a>
@@ -56,7 +59,10 @@ export default function Navbar() {
               href={GOOGLE_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-800 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-gray-900 transition-colors"
+              className="text-white px-6 py-2 rounded-xl text-sm font-medium transition-colors"
+              style={{ backgroundColor: '#8B1538' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
             >
               REGISTER NOW
             </a>
@@ -66,7 +72,10 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-gray-900 p-2"
+              className="p-2 transition-colors"
+              style={{ color: '#8B1538' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#6B0F2A'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#8B1538'}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -80,7 +89,8 @@ export default function Navbar() {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
-          className="md:hidden bg-white border-t border-gray-300"
+          className="md:hidden backdrop-blur-sm border-t"
+          style={{ backgroundColor: 'rgba(250, 250, 245, 0.95)', borderColor: 'rgba(139, 21, 56, 0.2)' }}
         >
           <div className="px-4 pt-2 pb-4 space-y-1">
             {menuItems.map((item) => (
@@ -88,7 +98,16 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md text-base font-medium"
+                className="block px-3 py-2 rounded-xl text-base font-medium transition-colors"
+                style={{ color: '#8B1538' }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = '#6B0F2A';
+                  e.currentTarget.style.backgroundColor = 'rgba(139, 21, 56, 0.1)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = '#8B1538';
+                  e.currentTarget.style.backgroundColor = 'transparent';
+                }}
               >
                 {item.name}
               </a>
@@ -98,7 +117,10 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
-              className="block mt-4 bg-gray-800 text-white px-6 py-2 rounded-md text-center text-sm font-medium hover:bg-gray-900"
+              className="block mt-4 text-white px-6 py-2 rounded-xl text-center text-sm font-medium transition-colors"
+              style={{ backgroundColor: '#8B1538' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
             >
               REGISTER NOW
             </a>

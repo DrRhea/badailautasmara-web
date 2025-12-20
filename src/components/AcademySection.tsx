@@ -42,7 +42,7 @@ const sports = [
 
 export default function AcademySection() {
   return (
-    <section id="academy" className="py-20 bg-white">
+    <section id="academy" className="py-20" style={{ backgroundColor: '#FAFAF5' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,10 +51,10 @@ export default function AcademySection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#8B1538' }}>
             JOGO Academy
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#333333' }}>
             Structured training programs with regular schedules and professional
             coaching
           </p>
@@ -68,16 +68,17 @@ export default function AcademySection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-12"
         >
-          <h3 className="text-xl font-semibold text-gray-800 mb-6">
+          <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
             Available Sports:
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {sports.map((sport, index) => (
               <div
                 key={index}
-                className="flex items-center p-4 bg-gray-50 border border-gray-300 rounded-md"
+                className="flex items-center p-4 rounded-xl border"
+                style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538', color: '#8B1538' }}
               >
-                <span className="text-gray-700">{sport}</span>
+                <span style={{ color: '#8B1538' }}>{sport}</span>
               </div>
             ))}
           </div>
@@ -91,16 +92,17 @@ export default function AcademySection() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mb-12"
         >
-          <h3 className="text-xl font-semibold text-gray-800 mb-6">
+          <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
             Age Categories:
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {ageCategories.map((age, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center p-4 bg-gray-50 border border-gray-300 rounded-md"
+                className="flex items-center justify-center p-4 rounded-xl border"
+                style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538', color: '#8B1538' }}
               >
-                <span className="text-gray-700 text-center">{age}</span>
+                <span className="text-center" style={{ color: '#8B1538' }}>{age}</span>
               </div>
             ))}
           </div>
@@ -114,26 +116,27 @@ export default function AcademySection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mb-12"
         >
-          <h3 className="text-xl font-semibold text-gray-800 mb-6">
+          <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
             Training Schedule:
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {schedule.map((item, index) => (
               <div
                 key={index}
-                className="bg-gray-50 border border-gray-300 rounded-lg p-6"
+                className="rounded-2xl p-6 border"
+                style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}
               >
                 <div className="flex items-center mb-3">
-                  <Calendar className="h-5 w-5 text-gray-700 mr-2" />
-                  <span className="font-semibold text-gray-900">{item.day}</span>
+                  <Calendar className="h-5 w-5 mr-2" style={{ color: '#8B1538' }} />
+                  <span className="font-semibold" style={{ color: '#8B1538' }}>{item.day}</span>
                 </div>
                 <div className="flex items-center mb-2">
-                  <Clock className="h-5 w-5 text-gray-700 mr-2" />
-                  <span className="text-gray-700">{item.time}</span>
+                  <Clock className="h-5 w-5 mr-2" style={{ color: '#8B1538' }} />
+                  <span style={{ color: '#8B1538' }}>{item.time}</span>
                 </div>
                 <div className="flex items-center">
-                  <MapPin className="h-5 w-5 text-gray-700 mr-2" />
-                  <span className="text-gray-700 text-sm">{item.venue}</span>
+                  <MapPin className="h-5 w-5 mr-2" style={{ color: '#8B1538' }} />
+                  <span className="text-sm" style={{ color: '#8B1538' }}>{item.venue}</span>
                 </div>
               </div>
             ))}
@@ -148,33 +151,33 @@ export default function AcademySection() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mb-8"
         >
-          <h3 className="text-xl font-semibold text-gray-800 mb-6">
+          <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
             Price List:
           </h3>
           <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-white border border-gray-300 rounded-lg">
+            <table className="w-full border-collapse rounded-2xl overflow-hidden border" style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}>
               <thead>
-                <tr className="bg-gray-200">
-                  <th className="border border-gray-300 px-6 py-4 text-left text-sm font-semibold text-gray-800">
+                <tr style={{ backgroundColor: 'rgba(139, 21, 56, 0.2)' }}>
+                  <th className="border px-6 py-4 text-left text-sm font-semibold" style={{ borderColor: '#8B1538', color: '#8B1538' }}>
                     Package
                   </th>
-                  <th className="border border-gray-300 px-6 py-4 text-left text-sm font-semibold text-gray-800">
+                  <th className="border px-6 py-4 text-left text-sm font-semibold" style={{ borderColor: '#8B1538', color: '#8B1538' }}>
                     Price
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {pricing.map((item, index) => (
-                  <tr key={index} className="hover:bg-gray-50">
-                    <td className="border border-gray-300 px-6 py-4 text-gray-700">
+                  <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#FAFAF5' : 'rgba(139, 21, 56, 0.05)' }}>
+                    <td className="border px-6 py-4" style={{ borderColor: '#8B1538', color: '#8B1538' }}>
                       {item.package}
                       {item.note && (
-                        <span className="block text-sm text-gray-500 mt-1">
+                        <span className="block text-sm mt-1" style={{ color: '#8B1538', opacity: 0.8 }}>
                           {item.note}
                         </span>
                       )}
                     </td>
-                    <td className="border border-gray-300 px-6 py-4 text-gray-700 font-medium">
+                    <td className="border px-6 py-4 font-medium" style={{ borderColor: '#8B1538', color: '#8B1538' }}>
                       {item.price}
                     </td>
                   </tr>
@@ -196,7 +199,10 @@ export default function AcademySection() {
             href={GOOGLE_FORM_ACADEMY}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-gray-800 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-900 transition-colors"
+            className="inline-block text-white px-8 py-3 rounded-xl font-medium transition-colors"
+            style={{ backgroundColor: '#8B1538' }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
           >
             Register for Academy
           </a>

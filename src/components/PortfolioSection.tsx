@@ -23,7 +23,7 @@ const portfolios = [
 
 export default function PortfolioSection() {
   return (
-    <section id="portfolio" className="py-20 bg-gray-50">
+    <section id="portfolio" className="py-20" style={{ backgroundColor: '#FAFAF5' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,10 +32,10 @@ export default function PortfolioSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#8B1538' }}>
             Portfolio Highlights
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#333333' }}>
             Successful events we have organized
           </p>
         </motion.div>
@@ -48,16 +48,17 @@ export default function PortfolioSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-white border border-gray-300 rounded-lg overflow-hidden shadow-sm"
+              className="rounded-2xl overflow-hidden shadow-sm border"
+              style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}
             >
-              <div className="h-48 bg-gray-300 flex items-center justify-center border-b border-gray-400 border-dashed">
-                <span className="text-gray-500 text-sm">Portfolio Image</span>
+              <div className="h-48 flex items-center justify-center border-b border-dashed" style={{ backgroundColor: 'rgba(139, 21, 56, 0.1)', borderColor: '#8B1538' }}>
+                <span className="text-sm" style={{ color: '#8B1538', opacity: 0.7 }}>Portfolio Image</span>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold mb-2" style={{ color: '#8B1538' }}>
                   {portfolio.title}
                 </h3>
-                <p className="text-gray-600">{portfolio.description}</p>
+                <p style={{ color: '#8B1538', opacity: 0.8 }}>{portfolio.description}</p>
               </div>
             </motion.div>
           ))}

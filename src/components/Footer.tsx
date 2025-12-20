@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-200 py-12">
+    <footer className="py-12" style={{ backgroundColor: '#8B1538', color: '#FAFAF5' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Logo Footer */}
         <div className="mb-8">
@@ -21,10 +21,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Alamat */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Address</h3>
+            <h3 className="text-lg font-semibold mb-4" style={{ color: '#FAFAF5' }}>Address</h3>
             <div className="flex items-start">
               <MapPin className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
-              <p className="text-gray-300">
+              <p style={{ color: '#FAFAF5', opacity: 0.9 }}>
                 Gedung AD Premier Lt.9, JI.TB Simatupang No.5, Jakarta Selatan
                 12550
               </p>
@@ -39,7 +39,10 @@ export default function Footer() {
                 <Phone className="h-5 w-5 mr-3 flex-shrink-0" />
                 <a
                   href="tel:+6281188022607"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="transition-colors"
+                  style={{ color: '#FAFAF5', opacity: 0.9 }}
+                  onMouseEnter={(e) => e.currentTarget.style.opacity = '1'}
+                  onMouseLeave={(e) => e.currentTarget.style.opacity = '0.9'}
                 >
                   +62 811 8802 2607
                 </a>
@@ -48,7 +51,10 @@ export default function Footer() {
                 <Mail className="h-5 w-5 mr-3 flex-shrink-0" />
                 <a
                   href="mailto:pt.badailautasmara@gmail.com"
-                  className="text-gray-300 hover:text-white transition-colors"
+                  className="transition-colors"
+                  style={{ color: '#FAFAF5', opacity: 0.9 }}
+                  onMouseEnter={(e) => e.currentTarget.style.opacity = '1'}
+                  onMouseLeave={(e) => e.currentTarget.style.opacity = '0.9'}
                 >
                   pt.badailautasmara@gmail.com
                 </a>
@@ -84,7 +90,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+        <div className="border-t pt-8 text-center text-sm" style={{ borderColor: 'rgba(250, 250, 245, 0.3)', color: '#FAFAF5', opacity: 0.8 }}>
           <p>&copy; 2024 PT Badai Laut Asmara. All rights reserved.</p>
         </div>
       </div>

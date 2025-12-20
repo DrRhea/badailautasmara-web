@@ -32,7 +32,7 @@ const coaches = [
 
 export default function CoachesSection() {
   return (
-    <section id="coach" className="py-20 bg-gray-50">
+    <section id="coach" className="py-20" style={{ backgroundColor: '#FAFAF5' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -41,55 +41,69 @@ export default function CoachesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#8B1538' }}>
             Meet The Coaches
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#333333' }}>
             Professional coaching team with Sports Science
             educational background
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {coaches.map((coach, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-white border border-gray-300 rounded-lg p-6 shadow-sm"
-            >
-              <div className="mb-4">
-                <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-gray-400 border-dashed">
-                  <span className="text-gray-500 text-xs text-center">Photo</span>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 text-center">
-                  {coach.name}
-                </h3>
-                <p className="text-sm text-gray-600 text-center mt-1">
-                  {coach.role}
-                </p>
-              </div>
-              {coach.specialization.length > 0 && (
-                <div className="mt-4">
-                  <p className="text-sm font-medium text-gray-700 mb-2">
-                    Specialization:
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {coach.specialization.map((spec, idx) => (
-                      <span
-                        key={idx}
-                        className="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full border border-gray-300"
-                      >
-                        {spec}
-                      </span>
-                    ))}
+        <div className="overflow-hidden">
+          <motion.div
+            className="flex gap-6"
+            animate={{
+              x: [0, -(316 * coaches.length)],
+            }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 30,
+                ease: "linear",
+              },
+            }}
+          >
+            {/* Duplicate coaches untuk infinite scroll */}
+            {[...coaches, ...coaches].map((coach, index) => (
+              <motion.div
+                key={index}
+                className="flex-shrink-0 w-[300px] md:w-[350px] rounded-2xl p-6 shadow-sm border"
+                style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}
+              >
+                <div className="mb-4">
+                  <div className="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center border-2 border-dashed" style={{ backgroundColor: 'rgba(139, 21, 56, 0.1)', borderColor: '#8B1538' }}>
+                    <span className="text-xs text-center" style={{ color: '#8B1538', opacity: 0.7 }}>Photo</span>
                   </div>
+                  <h3 className="text-xl font-semibold text-center" style={{ color: '#8B1538' }}>
+                    {coach.name}
+                  </h3>
+                  <p className="text-sm text-center mt-1" style={{ color: '#8B1538', opacity: 0.8 }}>
+                    {coach.role}
+                  </p>
                 </div>
-              )}
-            </motion.div>
-          ))}
+                {coach.specialization.length > 0 && (
+                  <div className="mt-4">
+                    <p className="text-sm font-medium mb-2" style={{ color: '#8B1538' }}>
+                      Specialization:
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {coach.specialization.map((spec, idx) => (
+                        <span
+                          key={idx}
+                          className="px-3 py-1 text-xs rounded-full border"
+                          style={{ backgroundColor: 'rgba(139, 21, 56, 0.1)', color: '#8B1538', borderColor: '#8B1538' }}
+                        >
+                          {spec}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>
