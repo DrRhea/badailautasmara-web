@@ -20,7 +20,7 @@ const advantages = [
 
 export default function EOSection() {
   return (
-    <section id="eo" className="py-20" style={{ backgroundColor: '#FAFAF5' }}>
+    <section id="eo" className="py-20" style={{ backgroundColor: 'rgba(250, 250, 245, 0.5)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

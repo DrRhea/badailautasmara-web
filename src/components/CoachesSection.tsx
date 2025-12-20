@@ -32,7 +32,7 @@ const coaches = [
 
 export default function CoachesSection() {
   return (
-    <section id="coach" className="py-20" style={{ backgroundColor: '#FAFAF5' }}>
+    <section id="coach" className="py-20" style={{ backgroundColor: 'rgba(139, 21, 56, 0.03)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
