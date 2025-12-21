@@ -12,7 +12,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "SportsOrganization",
     "name": "PT Badai Laut Asmara",
-    "alternateName": "JOGO Academy",
+    "alternateName": "JOGO FOOTBALL ACADEMY",
     "url": "https://www.badailautasmara.com",
     "logo": "https://www.badailautasmara.com/logos/logo-pt-badai-laut-asmara.png",
     "description": "Professional sports training academy and event organizer in Jakarta, Indonesia. Offering football, basketball, badminton, swimming, cricket, and kick boxing training.",
@@ -26,8 +26,7 @@ export default function Home() {
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+62-811-8802-2607",
-      "contactType": "Customer Service",
-      "email": "pt.badailautasmara@gmail.com"
+      "contactType": "Customer Service"
     },
     "sameAs": [
       "https://www.instagram.com/jfa.idn",
@@ -35,7 +34,7 @@ export default function Home() {
     ],
     "offers": {
       "@type": "Offer",
-      "name": "JOGO Academy Training",
+      "name": "JOGO FOOTBALL ACADEMY Training",
       "description": "Professional sports training programs"
     }
   };
@@ -43,7 +42,7 @@ export default function Home() {
   const sportsActivitySchema = {
     "@context": "https://schema.org",
     "@type": "SportsActivityLocation",
-    "name": "JOGO Academy",
+    "name": "JOGO FOOTBALL ACADEMY",
     "description": "Professional sports training academy offering football, basketball, badminton, swimming, cricket, and kick boxing training",
     "sport": ["Football", "Basketball", "Badminton", "Swimming", "Cricket", "Kick Boxing"]
   };

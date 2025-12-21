@@ -13,10 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PT Badai Laut Asmara - JOGO Academy & Event Organizer | Football Training Jakarta",
-  description: "JOGO Academy: Professional football training & sports coaching in Jakarta. PT Badai Laut Asmara: Premium sports event organizer. Football, Basketball, Badminton, Swimming, Cricket, Kick Boxing training. Professional coaches with Sports Science background.",
+  title: "PT Badai Laut Asmara - JOGO FOOTBALL ACADEMY & Event Organizer | Football Training Jakarta",
+  description: "JOGO FOOTBALL ACADEMY: Professional football training & sports coaching in Jakarta. JOGO PRIVATE TRAINING SERVICES: Personalized training sessions. PT Badai Laut Asmara: Premium sports event organizer. Football, Basketball, Badminton, Swimming, Cricket, Kick Boxing training. Professional coaches with Sports Science background.",
   keywords: [
-    "JOGO Academy",
+    "JOGO FOOTBALL ACADEMY",
+    "JOGO PRIVATE TRAINING SERVICES",
     "football training Jakarta",
     "sports coaching Indonesia",
     "PT Badai Laut Asmara",
@@ -45,8 +46,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "PT Badai Laut Asmara - JOGO Academy & Event Organizer",
-    description: "Professional football training & sports coaching in Jakarta. Premium sports event organizer.",
+    title: "PT Badai Laut Asmara - JOGO FOOTBALL ACADEMY & Event Organizer",
+    description: "JOGO FOOTBALL ACADEMY: Professional football training & sports coaching in Jakarta. JOGO PRIVATE TRAINING SERVICES: Personalized training sessions. Premium sports event organizer.",
     url: "https://www.badailautasmara.com",
     siteName: "PT Badai Laut Asmara",
     images: [
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
         url: "/logos/logo-pt-badai-laut-asmara.png",
         width: 1200,
         height: 630,
-        alt: "PT Badai Laut Asmara - JOGO Academy",
+        alt: "PT Badai Laut Asmara - JOGO FOOTBALL ACADEMY",
       },
     ],
     locale: "id_ID",
@@ -62,7 +63,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PT Badai Laut Asmara - JOGO Academy & Event Organizer",
+    title: "PT Badai Laut Asmara - JOGO FOOTBALL ACADEMY & Event Organizer",
     description: "Professional football training & sports coaching in Jakarta",
     images: ["/logos/logo-pt-badai-laut-asmara.png"],
   },

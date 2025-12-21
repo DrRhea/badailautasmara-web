@@ -45,7 +45,7 @@ export default function AcademySection() {
         >
           <div className="flex justify-center mb-6">
             <Image
-              src="/logos/logo-jogo.jpg"
+              src="/logos/logo-jogo.png"
               alt="JOGO Logo"
               width={200}
               height={200}
@@ -55,7 +55,7 @@ export default function AcademySection() {
             />
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#8B1538' }}>
-            JOGO Academy
+            JOGO FOOTBALL ACADEMY
           </h2>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: '#333333' }}>
             Structured training programs with regular schedules and professional

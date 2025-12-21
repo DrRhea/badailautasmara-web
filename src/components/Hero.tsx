@@ -73,7 +73,7 @@ export default function Hero() {
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
             >
-              Private Training
+              JOGO PRIVATE TRAINING SERVICES
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
             <a

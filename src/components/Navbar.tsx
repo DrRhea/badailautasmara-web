@@ -13,7 +13,7 @@ export default function Navbar() {
   const menuItems = [
     { name: "Home", href: "#home" },
     { name: "Academy", href: "#academy" },
-    { name: "Private Training", href: "#private" },
+    { name: "Private Training Services", href: "#private" },
     { name: "Event Organizer", href: "#eo" },
     { name: "Coach Profile", href: "#coach" },
     { name: "Gallery", href: "#gallery" },

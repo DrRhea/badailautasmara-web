@@ -32,7 +32,7 @@ export default function JOGOSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#8B1538' }}>
-            JOGO Private Training
+            JOGO PRIVATE TRAINING SERVICES
           </h2>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: '#333333' }}>
             Personalized one-on-one or small group training sessions tailored
@@ -72,9 +72,9 @@ export default function JOGOSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mb-8"
         >
-          <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
-            JOGO Private Training - Pricing:
-          </h3>
+              <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
+                JOGO PRIVATE TRAINING SERVICES - Pricing:
+              </h3>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse rounded-2xl overflow-hidden border" style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}>
               <thead>
@@ -125,7 +125,7 @@ export default function JOGOSection() {
             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
           >
-            Register for Private Training
+                Register for JOGO PRIVATE TRAINING SERVICES
           </a>
         </motion.div>
       </div>

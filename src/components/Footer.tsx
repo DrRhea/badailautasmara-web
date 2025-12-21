@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Phone, MapPin, Instagram, Music } from "lucide-react";
+import { Phone, MapPin, Instagram, Music } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -45,18 +45,6 @@ export default function Footer() {
                   onMouseLeave={(e) => e.currentTarget.style.opacity = '0.9'}
                 >
                   +62 811 8802 2607
-                </a>
-              </div>
-              <div className="flex items-center">
-                <Mail className="h-5 w-5 mr-3 flex-shrink-0" />
-                <a
-                  href="mailto:pt.badailautasmara@gmail.com"
-                  className="transition-colors"
-                  style={{ color: '#FAFAF5', opacity: 0.9 }}
-                  onMouseEnter={(e) => e.currentTarget.style.opacity = '1'}
-                  onMouseLeave={(e) => e.currentTarget.style.opacity = '0.9'}
-                >
-                  pt.badailautasmara@gmail.com
                 </a>
               </div>
             </div>
