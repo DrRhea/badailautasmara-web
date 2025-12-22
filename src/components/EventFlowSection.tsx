@@ -50,7 +50,7 @@ export default function EventFlowSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="relative"
+              className="relative h-full"
             >
               {/* Connector Line (except for last item) */}
               {index < eventFlowSteps.length - 1 && (
@@ -59,17 +59,17 @@ export default function EventFlowSection() {
                 </div>
               )}
               
-              <div className="relative z-10 p-6 rounded-2xl border" style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}>
+              <div className="relative z-10 h-full flex flex-col p-6 rounded-2xl border" style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538', minHeight: '200px' }}>
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center mr-3" style={{ backgroundColor: '#8B1538', color: '#FAFAF5' }}>
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center mr-3 flex-shrink-0" style={{ backgroundColor: '#8B1538', color: '#FAFAF5' }}>
                     <span className="font-bold text-lg">{step.number}</span>
                   </div>
-                  <CheckCircle className="h-6 w-6" style={{ color: '#8B1538' }} />
+                  <CheckCircle className="h-6 w-6 flex-shrink-0" style={{ color: '#8B1538' }} />
                 </div>
-                <h3 className="text-lg font-semibold mb-2" style={{ color: '#8B1538' }}>
+                <h3 className="text-lg font-semibold mb-2 flex-shrink-0" style={{ color: '#8B1538' }}>
                   {step.title}
                 </h3>
-                <p className="text-sm" style={{ color: '#333333', opacity: 0.8 }}>
+                <p className="text-sm flex-grow" style={{ color: '#333333', opacity: 0.8 }}>
                   {step.description}
                 </p>
               </div>
