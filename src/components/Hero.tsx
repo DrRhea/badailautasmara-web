@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="pt-16 min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="pt-14 sm:pt-16 min-h-[85vh] sm:min-h-screen flex items-center justify-center relative overflow-hidden"
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
@@ -20,21 +20,22 @@ export default function Hero() {
           src="/images/hero/hero-background.png"
           alt="Hero Background"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           priority
           quality={90}
+          sizes="100vw"
         />
         {/* Overlay untuk readability */}
         <div className="absolute inset-0" style={{ backgroundColor: 'rgba(139, 21, 56, 0.65)' }}></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-8 py-12 sm:py-16 md:py-20 relative z-10 w-full">
         <div className="text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 text-white leading-tight px-2"
           >
             One Integrated Sports Platform
           </motion.h1>
@@ -43,7 +44,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg sm:text-xl max-w-3xl mx-auto mb-10 text-white"
+            className="text-base sm:text-lg md:text-xl lg:text-xl max-w-3xl mx-auto mb-8 sm:mb-10 text-white px-4 leading-relaxed"
           >
             From elite athlete development with <strong>JOGO</strong>{" "}
             to premium sports event management by <strong>PT Badai Laut Asmara</strong> —
@@ -54,31 +55,32 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center px-4"
           >
             <a
               href="#academy"
-              className="inline-flex items-center justify-center text-white px-8 py-3 rounded-2xl font-medium transition-colors"
+              className="inline-flex items-center justify-center text-white px-6 sm:px-8 py-3 sm:py-3 rounded-2xl font-medium transition-colors text-sm sm:text-base touch-manipulation min-h-[44px]"
               style={{ backgroundColor: '#8B1538' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
             >
               Academy
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
             </a>
             <a
               href="#private"
-              className="inline-flex items-center justify-center text-white px-8 py-3 rounded-2xl font-medium transition-colors"
+              className="inline-flex items-center justify-center text-white px-4 sm:px-6 md:px-8 py-3 sm:py-3 rounded-2xl font-medium transition-colors text-xs sm:text-sm md:text-base touch-manipulation min-h-[44px] text-center"
               style={{ backgroundColor: '#8B1538' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
             >
-              JOGO PRIVATE TRAINING SERVICES
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <span className="hidden sm:inline">JOGO PRIVATE TRAINING SERVICES</span>
+              <span className="sm:hidden">Private Training</span>
+              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
             </a>
             <a
               href="#eo"
-              className="inline-flex items-center justify-center px-8 py-3 rounded-2xl font-medium transition-colors"
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-3 rounded-2xl font-medium transition-colors text-sm sm:text-base touch-manipulation min-h-[44px]"
               style={{ 
                 backgroundColor: '#FAFAF5',
                 color: '#8B1538',
