@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t pt-8 text-center text-sm" style={{ borderColor: 'rgba(250, 250, 245, 0.3)', color: '#FAFAF5', opacity: 0.8 }}>
-          <p>&copy; 2024 PT Badai Laut Asmara. All rights reserved.</p>
+          <p>&copy; 2025 PT Badai Laut Asmara. All rights reserved.</p>
         </div>
       </div>
     </footer>
