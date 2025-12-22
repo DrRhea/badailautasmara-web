@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const GOOGLE_FORM_PRIVATE = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Private
+const GOOGLE_FORM_PRIVATE = "https://forms.gle/SuGsZXWmrfYz28Ny9";
 
 const sports = [
   "Football",

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import Image from "next/image";
 
-const GOOGLE_FORM_ACADEMY = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Academy
+const GOOGLE_FORM_ACADEMY = "https://forms.gle/SuGsZXWmrfYz28Ny9";
 
 // Schedule data
 const schedule = [

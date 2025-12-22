@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-const GOOGLE_FORM_URL = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form Fathan
+const GOOGLE_FORM_URL = "https://forms.gle/SuGsZXWmrfYz28Ny9";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

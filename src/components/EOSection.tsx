@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 
-const GOOGLE_FORM_EVENT = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Event
+const GOOGLE_FORM_EVENT = "https://forms.gle/SuGsZXWmrfYz28Ny9";
 
 const services = [
   "Event Management: Local to international tournaments, permits, & venues",

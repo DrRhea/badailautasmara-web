@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
-const GOOGLE_FORM_ACADEMY = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Academy
-const GOOGLE_FORM_PRIVATE = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Private
-const GOOGLE_FORM_EVENT = "https://forms.gle/YOUR_FORM_ID"; // Ganti dengan link Google Form untuk Event
+const GOOGLE_FORM_ACADEMY = "https://forms.gle/SuGsZXWmrfYz28Ny9";
+const GOOGLE_FORM_PRIVATE = "https://forms.gle/SuGsZXWmrfYz28Ny9";
+const GOOGLE_FORM_EVENT = "https://forms.gle/SuGsZXWmrfYz28Ny9";
 
 export default function Hero() {
   return (
