@@ -14,6 +14,7 @@ const galleryImages = [
   { src: "/images/gallery/gallery-7.png", alt: "Swimming Session" },
   { src: "/images/gallery/gallery-8.png", alt: "Football Player - JOGO" },
   { src: "/images/gallery/gallery-9.png", alt: "Football Training Session" },
+  { src: "/images/gallery/gallery-10.png", alt: "Team Photo - JOGO" },
 ];
 
 export default function GallerySection() {
