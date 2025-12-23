@@ -3,7 +3,9 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-const GOOGLE_FORM_EVENT = "https://forms.gle/SuGsZXWmrfYz28Ny9";
+const WHATSAPP_NUMBER = "6281188022607";
+const BOOKING_MESSAGE = encodeURIComponent("Hello, I would like to book an event with JOGO Football Event Organizer. Please provide more information.");
+const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${BOOKING_MESSAGE}`;
 
 export default function BookingContactSection() {
   return (
@@ -27,7 +29,7 @@ export default function BookingContactSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <a
-              href={GOOGLE_FORM_EVENT}
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center text-white px-8 py-4 rounded-2xl font-medium transition-colors text-lg"

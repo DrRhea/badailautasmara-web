@@ -64,7 +64,7 @@ export default function Hero() {
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
             >
-              Academy
+              Football Academy
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
             </a>
             <a

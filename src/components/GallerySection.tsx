@@ -12,7 +12,6 @@ const galleryImages = [
   { src: "/images/gallery/gallery-4.png", alt: "Team Celebration" },
   { src: "/images/gallery/gallery-5.png", alt: "Football Player" },
   { src: "/images/gallery/gallery-6.png", alt: "Swimming Training" },
-  { src: "/images/gallery/gallery-7.png", alt: "Swimming Session" },
   { src: "/images/gallery/gallery-8.png", alt: "Football Player - JOGO" },
   { src: "/images/gallery/gallery-9.png", alt: "Football Training Session" },
 ];
