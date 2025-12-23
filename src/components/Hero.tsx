@@ -59,7 +59,7 @@ export default function Hero() {
           >
             <a
               href="#academy"
-              className="inline-flex items-center justify-center text-white px-6 sm:px-8 py-3 sm:py-3 rounded-2xl font-medium transition-colors text-sm sm:text-base touch-manipulation min-h-[44px]"
+              className="inline-flex items-center justify-center text-white px-6 sm:px-8 py-3 sm:py-3 rounded-2xl font-medium transition-colors text-base touch-manipulation min-h-[44px]"
               style={{ backgroundColor: '#8B1538' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
@@ -69,7 +69,7 @@ export default function Hero() {
             </a>
             <a
               href="#private"
-              className="inline-flex items-center justify-center text-white px-4 sm:px-6 md:px-8 py-3 sm:py-3 rounded-2xl font-medium transition-colors text-xs sm:text-sm md:text-base touch-manipulation min-h-[44px] text-center"
+              className="inline-flex items-center justify-center text-white px-4 sm:px-6 md:px-8 py-3 sm:py-3 rounded-2xl font-medium transition-colors text-base touch-manipulation min-h-[44px] text-center"
               style={{ backgroundColor: '#8B1538' }}
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
@@ -80,7 +80,7 @@ export default function Hero() {
             </a>
             <a
               href="#eo"
-              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-3 rounded-2xl font-medium transition-colors text-sm sm:text-base touch-manipulation min-h-[44px]"
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-3 rounded-2xl font-medium transition-colors text-base touch-manipulation min-h-[44px]"
               style={{ 
                 backgroundColor: '#FAFAF5',
                 color: '#8B1538',

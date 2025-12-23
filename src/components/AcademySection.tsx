@@ -122,6 +122,57 @@ export default function AcademySection() {
           </div>
         </motion.div>
 
+        {/* Training Venues */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.45 }}
+          className="mb-12"
+        >
+          <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
+            Training Venues:
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="rounded-2xl overflow-hidden border" style={{ borderColor: '#8B1538' }}>
+              <div className="relative w-full h-64">
+                <Image
+                  src="/images/field/dugout.png"
+                  alt="Dugout Club Arena BSD"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4" style={{ backgroundColor: '#FAFAF5' }}>
+                <h4 className="font-semibold text-lg mb-2" style={{ color: '#8B1538' }}>
+                  Dugout Club Arena BSD
+                </h4>
+                <p className="text-sm" style={{ color: '#8B1538', opacity: 0.8 }}>
+                  Professional football training facility
+                </p>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden border" style={{ borderColor: '#8B1538' }}>
+              <div className="relative w-full h-64">
+                <Image
+                  src="/images/field/b23.png"
+                  alt="B23 Simprug Arena"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4" style={{ backgroundColor: '#FAFAF5' }}>
+                <h4 className="font-semibold text-lg mb-2" style={{ color: '#8B1538' }}>
+                  B23 Simprug Arena
+                </h4>
+                <p className="text-sm" style={{ color: '#8B1538', opacity: 0.8 }}>
+                  Professional football training facility
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Price List */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
