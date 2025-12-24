@@ -7,12 +7,9 @@ import Image from "next/image";
 const galleryImages = [
   { src: "/images/gallery/gallery-10.png", alt: "Team Photo - JOGO" },
   { src: "/images/gallery/gallery-1.png", alt: "JOGO Training Session" },
-  { src: "/images/gallery/gallery-2.png", alt: "Football Training" },
   { src: "/images/gallery/gallery-3.png", alt: "Football Match Action" },
-  { src: "/images/gallery/gallery-4.png", alt: "Team Celebration" },
   { src: "/images/gallery/gallery-5.png", alt: "Football Player" },
   { src: "/images/gallery/gallery-6.png", alt: "Swimming Training" },
-  { src: "/images/gallery/gallery-8.png", alt: "Football Player - JOGO" },
   { src: "/images/gallery/gallery-9.png", alt: "Football Training Session" },
 ];
 
