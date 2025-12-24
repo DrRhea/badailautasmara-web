@@ -21,17 +21,21 @@ export const metadata: Metadata = {
     "football training Jakarta",
     "sports coaching Indonesia",
     "PT Badai Laut Asmara",
-    "event organizer olahraga",
+    "sports event organizer",
     "football academy Jakarta",
     "basketball training",
     "badminton coaching",
     "swimming lessons",
-    "sports event organizer",
-    "pelatih sepak bola Jakarta",
-    "akademi sepak bola",
-    "event organizer olahraga Jakarta",
-    "sports training center",
-    "professional sports coaching"
+    "sports event organizer Jakarta",
+    "football coach Jakarta",
+    "football academy",
+    "sports training center Jakarta",
+    "professional sports coaching",
+    "youth football training",
+    "private sports training",
+    "sports event management",
+    "football training center",
+    "athlete development program"
   ],
   authors: [{ name: "PT Badai Laut Asmara" }],
   creator: "PT Badai Laut Asmara",
@@ -58,7 +62,7 @@ export const metadata: Metadata = {
         alt: "PT Badai Laut Asmara - JOGO FOOTBALL ACADEMY",
       },
     ],
-    locale: "id_ID",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
@@ -94,7 +98,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id">
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
