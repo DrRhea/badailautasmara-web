@@ -234,7 +234,7 @@ export default function AcademySection() {
             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
             onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
           >
-            Register for Academy
+            Register for JOGO FOOTBALL ACADEMY
           </a>
         </motion.div>
       </div>
