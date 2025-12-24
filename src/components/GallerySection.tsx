@@ -11,6 +11,13 @@ const galleryImages = [
   { src: "/images/gallery/gallery-5.png", alt: "Football Player" },
   { src: "/images/gallery/gallery-6.png", alt: "Swimming Training" },
   { src: "/images/gallery/gallery-9.png", alt: "Football Training Session" },
+  { src: "/images/gallery/@B23 ARENA-206.jpg", alt: "B23 Arena Training Session" },
+  { src: "/images/gallery/@B23 ARENA-305.jpg", alt: "B23 Arena Football Training" },
+  { src: "/images/gallery/@B23 ARENA-369.jpg", alt: "B23 Arena Youth Training" },
+  { src: "/images/gallery/@B23 ARENA-495.jpg", alt: "B23 Arena Football Practice" },
+  { src: "/images/gallery/@B23 ARENA-582.jpg", alt: "B23 Arena Training Activity" },
+  { src: "/images/gallery/@B23 ARENA-699.jpg", alt: "B23 Arena Football Session" },
+  { src: "/images/gallery/@B23 ARENA-772.jpg", alt: "B23 Arena Training Moment" },
 ];
 
 export default function GallerySection() {
