@@ -59,7 +59,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <a href="#home" className="flex items-center" onClick={() => setIsMenuOpen(false)}>
               <Image
-                src="/logos/logo-pt-badai-laut-asmara.png"
+                src="/logos/logo-pt.png"
                 alt="PT Badai Laut Asmara"
                 width={180}
                 height={50}
