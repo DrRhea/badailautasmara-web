@@ -31,13 +31,13 @@ export default function JOGOSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4" style={{ color: '#8B1538' }}>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4" style={{ color: '#8B1538' }}>
             JOGO PRIVATE TRAINING SERVICES
           </h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#333333' }}>
-            Personalized one-on-one or small group training sessions tailored
-            to your needs
-          </p>
+          <div className="text-lg max-w-2xl mx-auto space-y-2" style={{ color: '#333333' }}>
+            <p>We Create Great Individual Skills</p>
+            <p>Personalized one-on-one or small group training sessions tailored to your needs</p>
+          </div>
         </motion.div>
 
         {/* Available Sports */}
