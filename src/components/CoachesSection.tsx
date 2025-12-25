@@ -79,19 +79,19 @@ const coaches = [
 
 export default function CoachesSection() {
   return (
-    <section id="coach" className="py-20" style={{ backgroundColor: 'rgba(139, 21, 56, 0.03)' }}>
+    <section id="coach" className="py-24 sm:py-28 md:py-32" style={{ backgroundColor: 'rgba(139, 21, 56, 0.03)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-16 sm:mb-20"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#8B1538' }}>
-            Meet The Coaches
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ color: '#8B1538' }}>
+            Meet The Team Coaches
           </h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#333333' }}>
+          <p className="text-lg sm:text-xl max-w-2xl mx-auto" style={{ color: '#333333' }}>
             Professional coaching team with Sports Science
             educational background
           </p>
@@ -103,24 +103,24 @@ export default function CoachesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mb-16"
+          className="mb-20 sm:mb-24"
         >
-          <div className="max-w-md mx-auto rounded-2xl p-8 border-2" style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}>
+          <div className="max-w-md mx-auto rounded-2xl p-8 sm:p-10 border-2 shadow-lg" style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}>
             <div className="mb-6">
-              <div className="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center border-2 overflow-hidden" style={{ borderColor: '#8B1538', backgroundColor: 'rgba(139, 21, 56, 0.1)' }}>
+              <div className="w-36 h-36 sm:w-40 sm:h-40 rounded-full mx-auto mb-6 flex items-center justify-center border-2 overflow-hidden" style={{ borderColor: '#8B1538', backgroundColor: 'rgba(139, 21, 56, 0.1)' }}>
                 {founder.photo ? (
                   <Image
                     src={founder.photo}
                     alt={founder.name}
-                    width={128}
-                    height={128}
+                    width={160}
+                    height={160}
                     className="w-full h-full object-cover object-top rounded-full"
                   />
                 ) : (
                   <span className="text-xs text-center" style={{ color: '#8B1538', opacity: 0.7 }}>Photo</span>
                 )}
               </div>
-              <h3 className="text-2xl font-semibold text-center" style={{ color: '#8B1538' }}>
+              <h3 className="text-2xl sm:text-3xl font-semibold text-center" style={{ color: '#8B1538' }}>
                 {founder.name}
               </h3>
               {founder.university && (
@@ -149,11 +149,11 @@ export default function CoachesSection() {
           </div>
         </motion.div>
 
-        <div className="overflow-hidden">
+        <div className="overflow-hidden py-4">
           <motion.div
-            className="flex gap-6"
+            className="flex gap-6 sm:gap-8"
             animate={{
-              x: [0, -(316 * coaches.length)],
+              x: [0, -(350 * coaches.length)],
             }}
             transition={{
               x: {
@@ -168,24 +168,24 @@ export default function CoachesSection() {
             {[...coaches, ...coaches].map((coach, index) => (
               <motion.div
                 key={index}
-                className="flex-shrink-0 w-[300px] md:w-[350px] rounded-2xl p-6 shadow-sm border"
+                className="shrink-0 w-[300px] sm:w-[320px] md:w-[350px] rounded-2xl p-6 sm:p-8 shadow-lg border-2"
                 style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}
               >
                 <div className="mb-4">
-                  <div className="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center border-2 overflow-hidden" style={{ borderColor: '#8B1538', backgroundColor: 'rgba(139, 21, 56, 0.1)' }}>
+                  <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full mx-auto mb-5 flex items-center justify-center border-2 overflow-hidden" style={{ borderColor: '#8B1538', backgroundColor: 'rgba(139, 21, 56, 0.1)' }}>
                     {coach.photo ? (
                       <Image
                         src={coach.photo}
                         alt={coach.name}
-                        width={96}
-                        height={96}
+                        width={128}
+                        height={128}
                         className="w-full h-full object-cover object-top rounded-full"
                       />
                     ) : (
                       <span className="text-xs text-center" style={{ color: '#8B1538', opacity: 0.7 }}>Photo</span>
                     )}
                   </div>
-                  <h3 className="text-xl font-semibold text-center" style={{ color: '#8B1538' }}>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-center" style={{ color: '#8B1538' }}>
                     {coach.name}
                   </h3>
                   {coach.university && (

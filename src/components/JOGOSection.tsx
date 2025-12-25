@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
-const GOOGLE_FORM_PRIVATE = "https://forms.gle/SuGsZXWmrfYz28Ny9";
+const WHATSAPP_NUMBER = "6281188022607";
 
 const sports = [
   "Football",
@@ -22,8 +23,21 @@ const pricing = [
 
 export default function JOGOSection() {
   return (
-    <section id="private" className="py-20" style={{ backgroundColor: 'rgba(250, 250, 245, 0.5)' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="private" className="relative py-20 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/logos/logo-jogo.png"
+          alt="JOGO Logo Background"
+          fill
+          className="object-contain"
+          priority
+        />
+        {/* Overlay untuk readability */}
+        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(250, 250, 245, 0.85)' }}></div>
+      </div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +131,7 @@ export default function JOGOSection() {
           className="text-center"
         >
           <a
-            href={GOOGLE_FORM_PRIVATE}
+            href={`https://wa.me/${WHATSAPP_NUMBER}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white px-8 py-3 rounded-xl font-medium transition-colors"
