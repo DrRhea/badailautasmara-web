@@ -250,7 +250,7 @@ export default function EOSection() {
           transition={{ duration: 0.6, delay: 1.9 }}
           className="text-center mt-20"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#FAFAF5' }}>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#8B1538' }}>
             Booking & Contact
           </h2>
           
