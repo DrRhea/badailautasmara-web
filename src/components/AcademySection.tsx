@@ -34,7 +34,7 @@ const pricing = [
 
 export default function AcademySection() {
   return (
-    <section id="academy" className="py-20" style={{ backgroundColor: '#8B1538', fontFamily: "'Gotham', 'Gotham Book', 'Gotham Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" }}>
+    <section id="academy" className="py-20" style={{ backgroundColor: '#8B1538' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <motion.div
