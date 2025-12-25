@@ -57,8 +57,8 @@ export default function EOSection() {
           className="object-cover"
           priority
         />
-        {/* Overlay untuk readability dengan gradasi */}
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(250, 250, 245, 0.8), rgba(139, 21, 56, 0.8))' }}></div>
+        {/* Overlay untuk readability */}
+        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(250, 250, 245, 0.8)' }}></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
