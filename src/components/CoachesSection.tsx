@@ -201,15 +201,6 @@ export default function CoachesSection() {
                   <p className="text-sm text-center mt-2 font-medium" style={{ color: '#8B1538', opacity: 0.9 }}>
                     {coach.role}
                   </p>
-                  {coach.additionalRoles && coach.additionalRoles.length > 0 && (
-                    <div className="mt-2 space-y-1">
-                      {coach.additionalRoles.map((additionalRole, idx) => (
-                        <p key={idx} className="text-xs text-center" style={{ color: '#8B1538', opacity: 0.7 }}>
-                          {additionalRole}
-                        </p>
-                      ))}
-                    </div>
-                  )}
                 </div>
                 {coach.specialization.length > 0 && (
                   <div className="mt-4">
