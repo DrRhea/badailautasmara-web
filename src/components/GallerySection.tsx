@@ -25,7 +25,7 @@ const galleryCategories = [
     title: "JOGO Private Training Small Group",
     images: [
       { src: "/images/gallery-new/small-group-1.png", alt: "JOGO Small Group Training 1" },
-      { src: "/images/gallery-new/small-group-2.png", alt: "JOGO Small Group Training 2" },
+      { src: "/images/gallery-new/small-group-2.jpeg", alt: "JOGO Small Group Training 2" },
       { src: "/images/gallery-new/small-group-3.png", alt: "JOGO Small Group Training 3" },
     ],
   },
