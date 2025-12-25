@@ -31,7 +31,7 @@ export default function JOGOSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#8B1538' }}>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4" style={{ color: '#8B1538' }}>
             JOGO PRIVATE TRAINING SERVICES
           </h2>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: '#333333' }}>
