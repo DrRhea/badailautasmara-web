@@ -31,7 +31,7 @@ export default function JOGOSection() {
           src="/logos/logo-jogo.png"
           alt="JOGO Logo Background"
           fill
-          className="object-contain"
+          className="object-cover md:object-contain"
           priority
         />
         {/* Overlay untuk readability */}

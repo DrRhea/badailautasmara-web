@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const GOOGLE_FORM_EVENT = "https://forms.gle/SuGsZXWmrfYz28Ny9";
 
@@ -10,8 +11,20 @@ export default function EOHeroSection() {
     <section
       id="eo-hero"
       className="py-20 min-h-[60vh] flex items-center justify-center relative overflow-hidden"
-      style={{ backgroundColor: 'rgba(139, 21, 56, 0.05)' }}
     >
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/event-organizer/bg-1.png"
+          alt="Event Organizer Background"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Overlay untuk readability */}
+        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(250, 250, 245, 0.6)' }}></div>
+      </div>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <motion.h2
@@ -22,19 +35,20 @@ export default function EOHeroSection() {
             className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
             style={{ color: '#8B1538' }}
           >
-            Jogo Football Event Organizer
+            Event Organizer
           </motion.h2>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg sm:text-xl max-w-3xl mx-auto mb-10"
+            className="text-lg sm:text-xl max-w-3xl mx-auto mb-10 space-y-2"
             style={{ color: '#333333' }}
           >
-            Creating fun, professional, and memorable football events.
-          </motion.p>
+            <p>Specialist in sports events.</p>
+            <p>Fun, Professional, and Memorable.</p>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}

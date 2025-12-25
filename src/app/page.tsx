@@ -3,10 +3,7 @@ import Hero from "@/components/Hero";
 import AcademySection from "@/components/AcademySection";
 import JOGOSection from "@/components/JOGOSection";
 import CoachesSection from "@/components/CoachesSection";
-import EOHeroSection from "@/components/EOHeroSection";
 import EOSection from "@/components/EOSection";
-import EventFlowSection from "@/components/EventFlowSection";
-import BookingContactSection from "@/components/BookingContactSection";
 import GallerySection from "@/components/GallerySection";
 import Footer from "@/components/Footer";
 
@@ -66,10 +63,7 @@ export default function Home() {
         <AcademySection />
         <JOGOSection />
         <CoachesSection />
-        <EOHeroSection />
         <EOSection />
-        <EventFlowSection />
-        <BookingContactSection />
         <GallerySection />
         <Footer />
         </div>

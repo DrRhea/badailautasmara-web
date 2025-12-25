@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const WHATSAPP_NUMBER = "6281188022607";
-const BOOKING_MESSAGE = encodeURIComponent("Hello, I would like to book an event with JOGO Football Event Organizer. Please provide more information.");
+const BOOKING_MESSAGE = encodeURIComponent("Hello, I’m interested in JOGO services and would like to get more details.");
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${BOOKING_MESSAGE}`;
 
 export default function BookingContactSection() {

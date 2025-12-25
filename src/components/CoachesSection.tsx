@@ -90,7 +90,7 @@ export default function CoachesSection() {
           priority
         />
         {/* Overlay untuk readability */}
-        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(250, 250, 245, 0.6)' }}></div>
+        <div className="absolute inset-0 backdrop-blur-sm lg:backdrop-blur-none" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -101,10 +101,10 @@ export default function CoachesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16 sm:mb-20"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ color: '#8B1538' }}>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ color: '#FAFAF5' }}>
             Meet The Team Coaches
           </h2>
-          <p className="text-lg sm:text-xl max-w-2xl mx-auto" style={{ color: '#333333' }}>
+          <p className="text-lg sm:text-xl max-w-2xl mx-auto" style={{ color: '#FAFAF5' }}>
             Professional coaching team with Sports Science
             educational background
           </p>

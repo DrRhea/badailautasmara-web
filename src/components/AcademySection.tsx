@@ -53,7 +53,7 @@ export default function AcademySection() {
             priority
           />
           {/* Overlay untuk readability */}
-          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
+          <div className="absolute inset-0 backdrop-blur-sm lg:backdrop-blur-none" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
         </div>
         
         {/* Content */}
@@ -187,15 +187,15 @@ export default function AcademySection() {
                     }}
                   >
                     <div className="flex items-center mb-2">
-                      <Calendar className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: '#FAFAF5' }} />
+                      <Calendar className="h-5 w-5 mr-2 shrink-0" style={{ color: '#FAFAF5' }} />
                       <span className="font-semibold" style={{ color: '#FAFAF5' }}>{item.day}</span>
                     </div>
                     <div className="flex items-center mb-2">
-                      <Clock className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: '#FAFAF5' }} />
+                      <Clock className="h-5 w-5 mr-2 shrink-0" style={{ color: '#FAFAF5' }} />
                       <span style={{ color: '#FAFAF5' }}>{item.time}</span>
                     </div>
                     <div className="flex items-center">
-                      <MapPin className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: '#FAFAF5' }} />
+                      <MapPin className="h-5 w-5 mr-2 shrink-0" style={{ color: '#FAFAF5' }} />
                       <span className="text-sm" style={{ color: '#FAFAF5' }}>{item.venue}</span>
                     </div>
                   </div>
