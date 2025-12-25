@@ -181,7 +181,7 @@ export default function EOSection() {
           transition={{ duration: 0.6, delay: 1.2 }}
           className="mt-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center" style={{ color: '#FAFAF5' }}>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center" style={{ color: '#8B1538' }}>
             Event Flow
           </h2>
           
