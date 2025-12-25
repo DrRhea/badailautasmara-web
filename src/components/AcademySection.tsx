@@ -24,12 +24,12 @@ const ageCategories = [
 ];
 
 const pricing = [
-  { package: "Registration", price: "IDR 500,000", note: "Include training kit; 1 set training jersey + socks" },
-  { package: "4 sessions", price: "IDR 800,000", note: "" },
-  { package: "8 sessions", price: "IDR 1,440,000", note: "" },
-  { package: "12 sessions", price: "IDR 1,800,000", note: "" },
-  { package: "24 sessions", price: "IDR 2,880,000", note: "" },
-  { package: "48 sessions", price: "IDR 5,000,000", note: "Free registration" },
+  { package: "Registration", price: "IDR 500.000", note: "Note: Include training kit; 1 set training jersey + socks" },
+  { package: "4 Sessions", price: "IDR 800.000", note: "" },
+  { package: "8 Sessions", price: "IDR 1.440.000", note: "" },
+  { package: "12 Sessions", price: "IDR 1.800.000", note: "" },
+  { package: "24 Sessions", price: "IDR 2.880.000", note: "" },
+  { package: "48 Sessions", price: "IDR 5.000.000", note: "Note: Free Registration" },
 ];
 
 export default function AcademySection() {
@@ -212,9 +212,12 @@ export default function AcademySection() {
               className="rounded-2xl p-6 border-2"
               style={{ backgroundColor: 'rgba(250, 250, 245, 0.1)', borderColor: '#FAFAF5' }}
             >
-              <h3 className="text-xl font-semibold mb-6 pb-4 border-b-2" style={{ color: '#FAFAF5', borderColor: '#FAFAF5' }}>
+              <h3 className="text-xl font-semibold mb-4 pb-4 border-b-2" style={{ color: '#FAFAF5', borderColor: '#FAFAF5' }}>
                 Price List:
               </h3>
+              <p className="text-sm mb-4" style={{ color: '#FAFAF5', opacity: 0.9 }}>
+                Note: all packages have no session expiration limit
+              </p>
               <div className="space-y-2">
                 {pricing.map((item, index) => (
                   <div
