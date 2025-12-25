@@ -34,7 +34,7 @@ const pricing = [
 
 export default function AcademySection() {
   return (
-    <section id="academy" className="py-20" style={{ backgroundColor: 'rgba(139, 21, 56, 0.03)' }}>
+    <section id="academy" className="py-20" style={{ backgroundColor: '#8B1538' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <motion.div
@@ -55,10 +55,10 @@ export default function AcademySection() {
               unoptimized
             />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#8B1538' }}>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#FAFAF5' }}>
             JOGO FOOTBALL ACADEMY
           </h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#333333' }}>
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#FAFAF5' }}>
             Structured training programs with regular schedules and professional
             coaching for Football
           </p>
@@ -75,9 +75,9 @@ export default function AcademySection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="rounded-2xl p-6 border-2"
-              style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}
+              style={{ backgroundColor: 'rgba(250, 250, 245, 0.1)', borderColor: '#FAFAF5' }}
             >
-              <h3 className="text-xl font-semibold mb-6 pb-4 border-b-2" style={{ color: '#8B1538', borderColor: '#8B1538' }}>
+              <h3 className="text-xl font-semibold mb-6 pb-4 border-b-2" style={{ color: '#FAFAF5', borderColor: '#FAFAF5' }}>
                 Age Categories:
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -85,9 +85,9 @@ export default function AcademySection() {
                   <div
                     key={index}
                     className="flex items-center justify-center p-4 rounded-xl border-2"
-                    style={{ backgroundColor: index % 2 === 0 ? 'rgba(139, 21, 56, 0.05)' : '#FAFAF5', borderColor: '#8B1538', color: '#8B1538' }}
+                    style={{ backgroundColor: index % 2 === 0 ? 'rgba(250, 250, 245, 0.1)' : 'rgba(250, 250, 245, 0.2)', borderColor: '#FAFAF5', color: '#FAFAF5' }}
                   >
-                    <span className="text-center text-sm font-medium" style={{ color: '#8B1538' }}>{age}</span>
+                    <span className="text-center text-sm font-medium" style={{ color: '#FAFAF5' }}>{age}</span>
                   </div>
                 ))}
               </div>
@@ -100,11 +100,11 @@ export default function AcademySection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
+              <h3 className="text-xl font-semibold mb-6" style={{ color: '#FAFAF5' }}>
                 Training Venues:
               </h3>
               <div className="space-y-4">
-                <div className="rounded-2xl overflow-hidden border-2" style={{ borderColor: '#8B1538' }}>
+                <div className="rounded-2xl overflow-hidden border-2" style={{ borderColor: '#FAFAF5' }}>
                   <div className="relative w-full h-48">
                     <Image
                       src="/images/field/dugout.png"
@@ -113,16 +113,16 @@ export default function AcademySection() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="p-5 border-t-2" style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}>
-                    <h4 className="font-semibold text-lg mb-2" style={{ color: '#8B1538' }}>
+                  <div className="p-5 border-t-2" style={{ backgroundColor: 'rgba(250, 250, 245, 0.1)', borderColor: '#FAFAF5' }}>
+                    <h4 className="font-semibold text-lg mb-2" style={{ color: '#FAFAF5' }}>
                       Dugout Club Arena BSD
                     </h4>
-                    <p className="text-sm" style={{ color: '#8B1538', opacity: 0.8 }}>
+                    <p className="text-sm" style={{ color: '#FAFAF5', opacity: 0.9 }}>
                       Professional football training facility
                     </p>
                   </div>
                 </div>
-                <div className="rounded-2xl overflow-hidden border-2" style={{ borderColor: '#8B1538' }}>
+                <div className="rounded-2xl overflow-hidden border-2" style={{ borderColor: '#FAFAF5' }}>
                   <div className="relative w-full h-48">
                     <Image
                       src="/images/field/b23.png"
@@ -131,11 +131,11 @@ export default function AcademySection() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="p-5 border-t-2" style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}>
-                    <h4 className="font-semibold text-lg mb-2" style={{ color: '#8B1538' }}>
+                  <div className="p-5 border-t-2" style={{ backgroundColor: 'rgba(250, 250, 245, 0.1)', borderColor: '#FAFAF5' }}>
+                    <h4 className="font-semibold text-lg mb-2" style={{ color: '#FAFAF5' }}>
                       B23 Simprug Arena
                     </h4>
-                    <p className="text-sm" style={{ color: '#8B1538', opacity: 0.8 }}>
+                    <p className="text-sm" style={{ color: '#FAFAF5', opacity: 0.9 }}>
                       Professional football training facility
                     </p>
                   </div>
@@ -153,9 +153,9 @@ export default function AcademySection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="rounded-2xl p-6 border-2"
-              style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}
+              style={{ backgroundColor: 'rgba(250, 250, 245, 0.1)', borderColor: '#FAFAF5' }}
             >
-              <h3 className="text-xl font-semibold mb-6 pb-4 border-b-2" style={{ color: '#8B1538', borderColor: '#8B1538' }}>
+              <h3 className="text-xl font-semibold mb-6 pb-4 border-b-2" style={{ color: '#FAFAF5', borderColor: '#FAFAF5' }}>
                 Training Schedule:
               </h3>
               <div className="space-y-3">
@@ -164,21 +164,21 @@ export default function AcademySection() {
                     key={index}
                     className="rounded-xl p-4 border-2"
                     style={{ 
-                      backgroundColor: index % 2 === 0 ? 'rgba(139, 21, 56, 0.05)' : '#FAFAF5', 
-                      borderColor: '#8B1538' 
+                      backgroundColor: index % 2 === 0 ? 'rgba(250, 250, 245, 0.1)' : 'rgba(250, 250, 245, 0.2)', 
+                      borderColor: '#FAFAF5' 
                     }}
                   >
                     <div className="flex items-center mb-2">
-                      <Calendar className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: '#8B1538' }} />
-                      <span className="font-semibold" style={{ color: '#8B1538' }}>{item.day}</span>
+                      <Calendar className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: '#FAFAF5' }} />
+                      <span className="font-semibold" style={{ color: '#FAFAF5' }}>{item.day}</span>
                     </div>
                     <div className="flex items-center mb-2">
-                      <Clock className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: '#8B1538' }} />
-                      <span style={{ color: '#8B1538' }}>{item.time}</span>
+                      <Clock className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: '#FAFAF5' }} />
+                      <span style={{ color: '#FAFAF5' }}>{item.time}</span>
                     </div>
                     <div className="flex items-center">
-                      <MapPin className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: '#8B1538' }} />
-                      <span className="text-sm" style={{ color: '#8B1538' }}>{item.venue}</span>
+                      <MapPin className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: '#FAFAF5' }} />
+                      <span className="text-sm" style={{ color: '#FAFAF5' }}>{item.venue}</span>
                     </div>
                   </div>
                 ))}
@@ -192,9 +192,9 @@ export default function AcademySection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
               className="rounded-2xl p-6 border-2"
-              style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}
+              style={{ backgroundColor: 'rgba(250, 250, 245, 0.1)', borderColor: '#FAFAF5' }}
             >
-              <h3 className="text-xl font-semibold mb-6 pb-4 border-b-2" style={{ color: '#8B1538', borderColor: '#8B1538' }}>
+              <h3 className="text-xl font-semibold mb-6 pb-4 border-b-2" style={{ color: '#FAFAF5', borderColor: '#FAFAF5' }}>
                 Price List:
               </h3>
               <div className="space-y-2">
@@ -203,22 +203,22 @@ export default function AcademySection() {
                     key={index}
                     className="rounded-xl p-4 border-2"
                     style={{ 
-                      backgroundColor: index % 2 === 0 ? 'rgba(139, 21, 56, 0.05)' : '#FAFAF5', 
-                      borderColor: '#8B1538' 
+                      backgroundColor: index % 2 === 0 ? 'rgba(250, 250, 245, 0.1)' : 'rgba(250, 250, 245, 0.2)', 
+                      borderColor: '#FAFAF5' 
                     }}
                   >
                     <div className="flex justify-between items-start">
                       <div className="flex-1">
-                        <div className="font-semibold mb-1" style={{ color: '#8B1538' }}>
+                        <div className="font-semibold mb-1" style={{ color: '#FAFAF5' }}>
                           {item.package}
                         </div>
                         {item.note && (
-                          <div className="text-xs mt-1" style={{ color: '#8B1538', opacity: 0.8 }}>
+                          <div className="text-xs mt-1" style={{ color: '#FAFAF5', opacity: 0.9 }}>
                             {item.note}
                           </div>
                         )}
                       </div>
-                      <div className="font-bold text-right ml-4" style={{ color: '#8B1538' }}>
+                      <div className="font-bold text-right ml-4" style={{ color: '#FAFAF5' }}>
                         {item.price}
                       </div>
                     </div>
@@ -241,15 +241,15 @@ export default function AcademySection() {
             href={GOOGLE_FORM_ACADEMY}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-white px-8 py-3 rounded-2xl font-medium transition-colors border-2"
-            style={{ backgroundColor: '#8B1538', borderColor: '#8B1538' }}
+            className="inline-block px-8 py-3 rounded-2xl font-medium transition-colors border-2"
+            style={{ backgroundColor: '#FAFAF5', color: '#8B1538', borderColor: '#FAFAF5' }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#6B0F2A';
-              e.currentTarget.style.borderColor = '#6B0F2A';
+              e.currentTarget.style.backgroundColor = 'rgba(250, 250, 245, 0.9)';
+              e.currentTarget.style.borderColor = 'rgba(250, 250, 245, 0.9)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = '#8B1538';
-              e.currentTarget.style.borderColor = '#8B1538';
+              e.currentTarget.style.backgroundColor = '#FAFAF5';
+              e.currentTarget.style.borderColor = '#FAFAF5';
             }}
           >
             Register for JOGO FOOTBALL ACADEMY
