@@ -3,51 +3,42 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-// Array untuk foto galeri
-const galleryImages = [
-  { src: "/images/gallery/@B23 ARENA-20.jpg", alt: "B23 Arena Group Photo" },
-  { src: "/images/gallery/gallery-10.png", alt: "Team Photo - JOGO" },
-  { src: "/images/gallery/@B23 ARENA-616.jpg", alt: "B23 Arena Team Photo" },
-  { src: "/images/gallery/gallery-1.png", alt: "JOGO Training Session" },
-  { src: "/images/gallery/gallery-3.png", alt: "Football Match Action" },
-  { src: "/images/gallery/gallery-5.png", alt: "Football Player" },
-  { src: "/images/gallery/gallery-6.png", alt: "Swimming Training" },
-  { src: "/images/gallery/gallery-9.png", alt: "Football Training Session" },
-  { src: "/images/gallery/gallery-whatsapp-1.jpg", alt: "JOGO Training Moment" },
-  { src: "/images/gallery/gallery-whatsapp-2.jpg", alt: "Football Training Session" },
-  { src: "/images/gallery/gallery-whatsapp-3.jpg", alt: "Youth Football Training" },
+// Array untuk foto galeri - dibagi menjadi 4 kategori
+const galleryCategories = [
+  {
+    title: "JOGO Football Academy",
+    images: [
+      { src: "/images/gallery-new/academy-1.jpg", alt: "JOGO Football Academy 1" },
+      { src: "/images/gallery-new/academy-2.jpg", alt: "JOGO Football Academy 2" },
+      { src: "/images/gallery-new/academy-3.jpg", alt: "JOGO Football Academy 3" },
+    ],
+  },
+  {
+    title: "JOGO Private Training Services",
+    images: [
+      { src: "/images/gallery-new/private-1.png", alt: "JOGO Private Training 1" },
+      { src: "/images/gallery-new/private-2.png", alt: "JOGO Private Training 2" },
+    ],
+  },
+  {
+    title: "JOGO Private Training Small Group",
+    images: [
+      { src: "/images/gallery-new/small-group-1.png", alt: "JOGO Small Group Training 1" },
+      { src: "/images/gallery-new/small-group-2.png", alt: "JOGO Small Group Training 2" },
+      { src: "/images/gallery-new/small-group-3.png", alt: "JOGO Small Group Training 3" },
+    ],
+  },
+  {
+    title: "Sports Event",
+    images: [
+      { src: "/images/gallery-new/sports-event-1.png", alt: "Sports Event 1" },
+      { src: "/images/gallery-new/sports-event-2.png", alt: "Sports Event 2" },
+      { src: "/images/gallery-new/sports-event-3.png", alt: "Sports Event 3" },
+    ],
+  },
 ];
 
 export default function GallerySection() {
-  // Jika belum ada foto, tampilkan placeholder
-  if (galleryImages.length === 0) {
-    return (
-      <section id="gallery" className="py-20" style={{ backgroundColor: 'rgba(139, 21, 56, 0.03)' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#8B1538' }}>
-              Gallery
-            </h2>
-            <p className="text-lg mb-8" style={{ color: '#333333' }}>
-              Photo gallery will be displayed here
-            </p>
-            <div className="bg-gray-200 rounded-2xl p-12 border-2 border-dashed" style={{ borderColor: '#8B1538' }}>
-              <p className="text-sm" style={{ color: '#8B1538', opacity: 0.7 }}>
-                Upload photos to /public/images/gallery/ folder
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-    );
-  }
-
   return (
     <section id="gallery" className="py-20" style={{ backgroundColor: 'rgba(139, 21, 56, 0.03)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,23 +57,38 @@ export default function GallerySection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {galleryImages.map((image, index) => (
+        <div className="space-y-16">
+          {galleryCategories.map((category, categoryIndex) => (
             <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              key={categoryIndex}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative aspect-square rounded-2xl overflow-hidden border"
-              style={{ borderColor: '#8B1538' }}
+              transition={{ duration: 0.6, delay: categoryIndex * 0.2 }}
             >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                className="object-cover hover:scale-110 transition-transform duration-300"
-              />
+              <h3 className="text-2xl sm:text-3xl font-bold mb-8 text-center" style={{ color: '#8B1538' }}>
+                {category.title}
+              </h3>
+              <div className="space-y-6">
+                {category.images.map((image, imageIndex) => (
+                  <motion.div
+                    key={imageIndex}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: categoryIndex * 0.2 + imageIndex * 0.1 }}
+                    className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border"
+                    style={{ borderColor: '#8B1538' }}
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-cover hover:scale-110 transition-transform duration-300"
+                    />
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>
