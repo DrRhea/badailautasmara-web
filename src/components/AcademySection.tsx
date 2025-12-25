@@ -58,10 +58,11 @@ export default function AcademySection() {
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4" style={{ color: '#FAFAF5' }}>
             JOGO FOOTBALL ACADEMY
           </h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: '#FAFAF5' }}>
-            Structured training programs with regular schedules and professional
-            coaching for Football
-          </p>
+          <div className="text-lg max-w-2xl mx-auto space-y-2" style={{ color: '#FAFAF5' }}>
+            <p>The only football academy that trains like private sessions!</p>
+            <p>More focus, more attention, better progress.</p>
+            <p>Structured training programs with regular schedules and professional coaching for football.</p>
+          </div>
         </motion.div>
 
         {/* Main Content Grid - 2 Columns Layout */}
