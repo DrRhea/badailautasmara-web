@@ -34,7 +34,7 @@ const pricing = [
 
 export default function AcademySection() {
   return (
-    <section id="academy" className="py-20" style={{ backgroundColor: '#8B1538' }}>
+    <section id="academy" className="py-20" style={{ backgroundColor: '#8B1538', fontFamily: "'Gotham', 'Gotham Book', 'Gotham Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <motion.div
@@ -55,7 +55,7 @@ export default function AcademySection() {
               unoptimized
             />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: '#FAFAF5' }}>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4" style={{ color: '#FAFAF5' }}>
             JOGO FOOTBALL ACADEMY
           </h2>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: '#FAFAF5' }}>
