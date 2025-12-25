@@ -15,7 +15,7 @@ const founder = {
     "Indonesian - Actor"
   ],
   specialization: [],
-  photo: "/images/coaches/swara-andhika-emil.png",
+  photo: "/images/coaches/foto-swara-new.png",
 };
 
 const coaches = [
