@@ -3,21 +3,22 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const founder = {
+  name: "Swara Andhika Emil",
+  university: "Universitas Indonesia",
+  major: "Dutch Literature",
+  role: "Founder & Owner of JOGO",
+  additionalRoles: [
+    "President Director at PT BADAI LAUT ASMARA",
+    "Chairman of Yayasan Abang None Jakarta Olahraga",
+    "President of Pemuda Olahraga Bersatu",
+    "Indonesian - Actor"
+  ],
+  specialization: [],
+  photo: "/images/coaches/swara-andhika-emil.png",
+};
+
 const coaches = [
-  {
-    name: "Swara Andhika Emil",
-    university: "Universitas Indonesia",
-    major: "Dutch Literature",
-    role: "Founder & Owner of JOGO",
-    additionalRoles: [
-      "President Director at PT BADAI LAUT ASMARA",
-      "Chairman of Yayasan Abang None Jakarta Olahraga",
-      "President of Pemuda Olahraga Bersatu",
-      "Indonesian - Actor"
-    ],
-    specialization: [],
-    photo: "/images/coaches/swara-andhika-emil.png",
-  },
   {
     name: "Muhhamad Fahrul Saputra",
     university: "Universitas Negeri Jakarta",
@@ -94,6 +95,58 @@ export default function CoachesSection() {
             Professional coaching team with Sports Science
             educational background
           </p>
+        </motion.div>
+
+        {/* Founder Card - Separate */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mb-16"
+        >
+          <div className="max-w-md mx-auto rounded-2xl p-8 border-2" style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}>
+            <div className="mb-6">
+              <div className="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center border-2 overflow-hidden" style={{ borderColor: '#8B1538', backgroundColor: 'rgba(139, 21, 56, 0.1)' }}>
+                {founder.photo ? (
+                  <Image
+                    src={founder.photo}
+                    alt={founder.name}
+                    width={128}
+                    height={128}
+                    className="w-full h-full object-cover object-top rounded-full"
+                  />
+                ) : (
+                  <span className="text-xs text-center" style={{ color: '#8B1538', opacity: 0.7 }}>Photo</span>
+                )}
+              </div>
+              <h3 className="text-2xl font-semibold text-center" style={{ color: '#8B1538' }}>
+                {founder.name}
+              </h3>
+              {founder.university && (
+                <p className="text-sm text-center mt-1" style={{ color: '#8B1538', opacity: 0.7 }}>
+                  {founder.university}
+                </p>
+              )}
+              {founder.major && (
+                <p className="text-sm text-center mt-0.5" style={{ color: '#8B1538', opacity: 0.7 }}>
+                  {founder.major}
+                </p>
+              )}
+              <p className="text-base text-center mt-3 font-medium" style={{ color: '#8B1538', opacity: 0.9 }}>
+                {founder.role}
+              </p>
+              {founder.additionalRoles && founder.additionalRoles.length > 0 && (
+                <div className="mt-3 space-y-1">
+                  {founder.additionalRoles.map((additionalRole, idx) => (
+                    <p key={idx} className="text-xs text-center" style={{ color: '#8B1538', opacity: 0.7 }}>
+                      {additionalRole}
+                    </p>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
         </motion.div>
 
         <div className="overflow-hidden">
