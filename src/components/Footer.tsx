@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, MapPin, Instagram, Music } from "lucide-react";
+import { Phone, MapPin, Instagram } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -71,7 +71,17 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center text-gray-300 hover:text-white transition-colors"
               >
-                <Music className="h-5 w-5 mr-2" />
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="20" 
+                  height="20" 
+                  fill="currentColor" 
+                  className="bi bi-tiktok mr-2" 
+                  viewBox="0 0 16 16"
+                  style={{ color: '#FAFAF5' }}
+                >
+                  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                </svg>
                 <span className="text-sm">@jogoprivatetraining</span>
               </a>
             </div>
