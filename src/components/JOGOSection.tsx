@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const WHATSAPP_NUMBER = "6281188022607";
+const WHATSAPP_MESSAGE = "Hello, I'm interested in JOGO services and would like to get more details.";
 
 const sports = [
   "Football",
@@ -131,7 +132,7 @@ export default function JOGOSection() {
           className="text-center"
         >
           <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}`}
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white px-8 py-3 rounded-xl font-medium transition-colors"

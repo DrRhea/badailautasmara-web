@@ -79,8 +79,21 @@ const coaches = [
 
 export default function CoachesSection() {
   return (
-    <section id="coach" className="py-24 sm:py-28 md:py-32" style={{ backgroundColor: 'rgba(139, 21, 56, 0.03)' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="coach" className="relative py-24 sm:py-28 md:py-32 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/meet-the-team-coaches/meet-the-team-coaches-background.png"
+          alt="Meet The Team Coaches Background"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Overlay untuk readability */}
+        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(250, 250, 245, 0.85)' }}></div>
+      </div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
