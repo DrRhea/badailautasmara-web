@@ -64,7 +64,7 @@ export default function Hero() {
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
             >
-              Football Academy
+              Jogo Football Academy
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
             </a>
             <a
@@ -74,7 +74,7 @@ export default function Hero() {
               onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
             >
-              <span className="hidden sm:inline">JOGO PRIVATE TRAINING SERVICES</span>
+              <span className="hidden sm:inline">Jogo Private Training Services</span>
               <span className="sm:hidden">Private Training</span>
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
             </a>
