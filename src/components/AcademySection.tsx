@@ -36,12 +36,13 @@ export default function AcademySection() {
   return (
     <section id="academy" className="py-20" style={{ backgroundColor: 'rgba(139, 21, 56, 0.03)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
           <div className="flex justify-center mb-6">
             <Image
@@ -63,159 +64,170 @@ export default function AcademySection() {
           </p>
         </motion.div>
 
-        {/* Age Categories */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mb-12"
-        >
-          <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
-            Age Categories:
-          </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            {ageCategories.map((age, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center p-4 rounded-xl border"
-                style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538', color: '#8B1538' }}
-              >
-                <span className="text-center" style={{ color: '#8B1538' }}>{age}</span>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Schedule */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mb-12"
-        >
-          <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
-            Training Schedule:
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {schedule.map((item, index) => (
-              <div
-                key={index}
-                className="rounded-2xl p-6 border"
-                style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}
-              >
-                <div className="flex items-center mb-3">
-                  <Calendar className="h-5 w-5 mr-2" style={{ color: '#8B1538' }} />
-                  <span className="font-semibold" style={{ color: '#8B1538' }}>{item.day}</span>
-                </div>
-                <div className="flex items-center mb-2">
-                  <Clock className="h-5 w-5 mr-2" style={{ color: '#8B1538' }} />
-                  <span style={{ color: '#8B1538' }}>{item.time}</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPin className="h-5 w-5 mr-2" style={{ color: '#8B1538' }} />
-                  <span className="text-sm" style={{ color: '#8B1538' }}>{item.venue}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Training Venues */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.45 }}
-          className="mb-12"
-        >
-          <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
-            Training Venues:
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="rounded-2xl overflow-hidden border" style={{ borderColor: '#8B1538' }}>
-              <div className="relative w-full h-64">
-                <Image
-                  src="/images/field/dugout.png"
-                  alt="Dugout Club Arena BSD"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4" style={{ backgroundColor: '#FAFAF5' }}>
-                <h4 className="font-semibold text-lg mb-2" style={{ color: '#8B1538' }}>
-                  Dugout Club Arena BSD
-                </h4>
-                <p className="text-sm" style={{ color: '#8B1538', opacity: 0.8 }}>
-                  Professional football training facility
-                </p>
-              </div>
-            </div>
-            <div className="rounded-2xl overflow-hidden border" style={{ borderColor: '#8B1538' }}>
-              <div className="relative w-full h-64">
-                <Image
-                  src="/images/field/b23.png"
-                  alt="B23 Simprug Arena"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4" style={{ backgroundColor: '#FAFAF5' }}>
-                <h4 className="font-semibold text-lg mb-2" style={{ color: '#8B1538' }}>
-                  B23 Simprug Arena
-                </h4>
-                <p className="text-sm" style={{ color: '#8B1538', opacity: 0.8 }}>
-                  Professional football training facility
-                </p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Price List */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="mb-8"
-        >
-          <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
-            Price List:
-          </h3>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse rounded-2xl overflow-hidden border" style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}>
-              <thead>
-                <tr style={{ backgroundColor: 'rgba(139, 21, 56, 0.2)' }}>
-                  <th className="border px-6 py-4 text-left text-sm font-semibold" style={{ borderColor: '#8B1538', color: '#8B1538' }}>
-                    Package
-                  </th>
-                  <th className="border px-6 py-4 text-left text-sm font-semibold" style={{ borderColor: '#8B1538', color: '#8B1538' }}>
-                    Price
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {pricing.map((item, index) => (
-                  <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#FAFAF5' : 'rgba(139, 21, 56, 0.05)' }}>
-                    <td className="border px-6 py-4" style={{ borderColor: '#8B1538', color: '#8B1538' }}>
-                      {item.package}
-                      {item.note && (
-                        <span className="block text-sm mt-1" style={{ color: '#8B1538', opacity: 0.8 }}>
-                          {item.note}
-                        </span>
-                      )}
-                    </td>
-                    <td className="border px-6 py-4 font-medium" style={{ borderColor: '#8B1538', color: '#8B1538' }}>
-                      {item.price}
-                    </td>
-                  </tr>
+        {/* Main Content Grid - 2 Columns Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+          {/* Left Column */}
+          <div className="space-y-8">
+            {/* Age Categories */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="rounded-2xl p-6 border-2"
+              style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}
+            >
+              <h3 className="text-xl font-semibold mb-6 pb-4 border-b-2" style={{ color: '#8B1538', borderColor: '#8B1538' }}>
+                Age Categories:
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {ageCategories.map((age, index) => (
+                  <div
+                    key={index}
+                    className="flex items-center justify-center p-4 rounded-xl border-2"
+                    style={{ backgroundColor: index % 2 === 0 ? 'rgba(139, 21, 56, 0.05)' : '#FAFAF5', borderColor: '#8B1538', color: '#8B1538' }}
+                  >
+                    <span className="text-center text-sm font-medium" style={{ color: '#8B1538' }}>{age}</span>
+                  </div>
                 ))}
-              </tbody>
-            </table>
+              </div>
+            </motion.div>
+
+            {/* Training Venues */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <h3 className="text-xl font-semibold mb-6" style={{ color: '#8B1538' }}>
+                Training Venues:
+              </h3>
+              <div className="space-y-4">
+                <div className="rounded-2xl overflow-hidden border-2" style={{ borderColor: '#8B1538' }}>
+                  <div className="relative w-full h-48">
+                    <Image
+                      src="/images/field/dugout.png"
+                      alt="Dugout Club Arena BSD"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-5 border-t-2" style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}>
+                    <h4 className="font-semibold text-lg mb-2" style={{ color: '#8B1538' }}>
+                      Dugout Club Arena BSD
+                    </h4>
+                    <p className="text-sm" style={{ color: '#8B1538', opacity: 0.8 }}>
+                      Professional football training facility
+                    </p>
+                  </div>
+                </div>
+                <div className="rounded-2xl overflow-hidden border-2" style={{ borderColor: '#8B1538' }}>
+                  <div className="relative w-full h-48">
+                    <Image
+                      src="/images/field/b23.png"
+                      alt="B23 Simprug Arena"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-5 border-t-2" style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}>
+                    <h4 className="font-semibold text-lg mb-2" style={{ color: '#8B1538' }}>
+                      B23 Simprug Arena
+                    </h4>
+                    <p className="text-sm" style={{ color: '#8B1538', opacity: 0.8 }}>
+                      Professional football training facility
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
           </div>
-        </motion.div>
+
+          {/* Right Column */}
+          <div className="space-y-8">
+            {/* Schedule */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="rounded-2xl p-6 border-2"
+              style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}
+            >
+              <h3 className="text-xl font-semibold mb-6 pb-4 border-b-2" style={{ color: '#8B1538', borderColor: '#8B1538' }}>
+                Training Schedule:
+              </h3>
+              <div className="space-y-3">
+                {schedule.map((item, index) => (
+                  <div
+                    key={index}
+                    className="rounded-xl p-4 border-2"
+                    style={{ 
+                      backgroundColor: index % 2 === 0 ? 'rgba(139, 21, 56, 0.05)' : '#FAFAF5', 
+                      borderColor: '#8B1538' 
+                    }}
+                  >
+                    <div className="flex items-center mb-2">
+                      <Calendar className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: '#8B1538' }} />
+                      <span className="font-semibold" style={{ color: '#8B1538' }}>{item.day}</span>
+                    </div>
+                    <div className="flex items-center mb-2">
+                      <Clock className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: '#8B1538' }} />
+                      <span style={{ color: '#8B1538' }}>{item.time}</span>
+                    </div>
+                    <div className="flex items-center">
+                      <MapPin className="h-5 w-5 mr-2 flex-shrink-0" style={{ color: '#8B1538' }} />
+                      <span className="text-sm" style={{ color: '#8B1538' }}>{item.venue}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Price List */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="rounded-2xl p-6 border-2"
+              style={{ backgroundColor: '#FAFAF5', borderColor: '#8B1538' }}
+            >
+              <h3 className="text-xl font-semibold mb-6 pb-4 border-b-2" style={{ color: '#8B1538', borderColor: '#8B1538' }}>
+                Price List:
+              </h3>
+              <div className="space-y-2">
+                {pricing.map((item, index) => (
+                  <div
+                    key={index}
+                    className="rounded-xl p-4 border-2"
+                    style={{ 
+                      backgroundColor: index % 2 === 0 ? 'rgba(139, 21, 56, 0.05)' : '#FAFAF5', 
+                      borderColor: '#8B1538' 
+                    }}
+                  >
+                    <div className="flex justify-between items-start">
+                      <div className="flex-1">
+                        <div className="font-semibold mb-1" style={{ color: '#8B1538' }}>
+                          {item.package}
+                        </div>
+                        {item.note && (
+                          <div className="text-xs mt-1" style={{ color: '#8B1538', opacity: 0.8 }}>
+                            {item.note}
+                          </div>
+                        )}
+                      </div>
+                      <div className="font-bold text-right ml-4" style={{ color: '#8B1538' }}>
+                        {item.price}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
 
         {/* CTA Button */}
         <motion.div
@@ -229,10 +241,16 @@ export default function AcademySection() {
             href={GOOGLE_FORM_ACADEMY}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-white px-8 py-3 rounded-xl font-medium transition-colors"
-            style={{ backgroundColor: '#8B1538' }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#6B0F2A'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#8B1538'}
+            className="inline-block text-white px-8 py-3 rounded-2xl font-medium transition-colors border-2"
+            style={{ backgroundColor: '#8B1538', borderColor: '#8B1538' }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = '#6B0F2A';
+              e.currentTarget.style.borderColor = '#6B0F2A';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = '#8B1538';
+              e.currentTarget.style.borderColor = '#8B1538';
+            }}
           >
             Register for JOGO FOOTBALL ACADEMY
           </a>
