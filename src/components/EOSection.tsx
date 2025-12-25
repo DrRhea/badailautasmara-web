@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
-const GOOGLE_FORM_EVENT = "https://forms.gle/SuGsZXWmrfYz28Ny9";
+const GOOGLE_FORM_EVENT = "https://forms.gle/v7c5Tp9XM3ZpHEoLA";
 const WHATSAPP_NUMBER = "6281188022607";
 const BOOKING_MESSAGE = encodeURIComponent("Hello, I’m interested in JOGO services and would like to get more details.");
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${BOOKING_MESSAGE}`;
