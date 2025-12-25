@@ -34,16 +34,30 @@ const pricing = [
 
 export default function AcademySection() {
   return (
-    <section id="academy" className="py-20" style={{ backgroundColor: '#8B1538' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+    <section id="academy" style={{ backgroundColor: '#8B1538' }}>
+      {/* Header Section - Full Width */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="relative w-full overflow-hidden"
+      >
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/section-2/header.png"
+            alt="JOGO Football Academy Header"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Overlay untuk readability */}
+          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}></div>
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 text-center py-12 sm:py-16 px-4">
           <div className="flex justify-center mb-6">
             <Image
               src="/logos/logo-jogo.png"
@@ -63,7 +77,10 @@ export default function AcademySection() {
             <p>More focus, more attention, better progress.</p>
             <p>Structured training programs with regular schedules and professional coaching for football.</p>
           </div>
-        </motion.div>
+        </div>
+      </motion.div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
 
         {/* Main Content Grid - 2 Columns Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
