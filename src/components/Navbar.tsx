@@ -43,10 +43,14 @@ export default function Navbar() {
 
   return (
     <nav 
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b shadow-sm transition-all duration-300" 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled 
+          ? 'backdrop-blur-sm border-b shadow-sm' 
+          : 'backdrop-blur-none border-b-0 shadow-none'
+      }`}
       style={{ 
-        backgroundColor: isScrolled ? 'rgba(250, 250, 245, 0.98)' : 'rgba(250, 250, 245, 0.9)', 
-        borderColor: 'rgba(139, 21, 56, 0.2)' 
+        backgroundColor: isScrolled ? 'rgba(250, 250, 245, 0.98)' : 'transparent', 
+        borderColor: isScrolled ? 'rgba(139, 21, 56, 0.2)' : 'transparent'
       }}
     >
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
@@ -72,9 +76,9 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 className="px-2 lg:px-3 py-2 text-xs lg:text-sm font-medium transition-colors whitespace-nowrap"
-                style={{ color: '#8B1538' }}
-                onMouseEnter={(e) => e.currentTarget.style.color = '#6B0F2A'}
-                onMouseLeave={(e) => e.currentTarget.style.color = '#8B1538'}
+                style={{ color: isScrolled ? '#8B1538' : '#FFFFFF' }}
+                onMouseEnter={(e) => e.currentTarget.style.color = isScrolled ? '#6B0F2A' : '#FAFAF5'}
+                onMouseLeave={(e) => e.currentTarget.style.color = isScrolled ? '#8B1538' : '#FFFFFF'}
               >
                 {item.name}
               </a>
@@ -101,7 +105,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 transition-colors touch-manipulation"
-              style={{ color: '#8B1538' }}
+              style={{ color: isScrolled ? '#8B1538' : '#FFFFFF' }}
               aria-label="Toggle menu"
               aria-expanded={isMenuOpen}
             >
