@@ -45,7 +45,7 @@ export default function AcademySection() {
         >
           <div className="flex justify-center mb-6">
             <Image
-              src="/logos/logo-jogo.jpg"
+              src="/logos/logo-jogo.png"
               alt="JOGO Logo"
               width={200}
               height={200}
