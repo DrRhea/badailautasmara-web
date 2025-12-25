@@ -57,8 +57,8 @@ export default function EOSection() {
           className="object-cover"
           priority
         />
-        {/* Overlay untuk readability */}
-        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(250, 250, 245, 0.8)' }}></div>
+        {/* Overlay untuk readability dengan gradasi */}
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(250, 250, 245, 0.8), rgba(139, 21, 56, 0.8))' }}></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -181,7 +181,7 @@ export default function EOSection() {
           transition={{ duration: 0.6, delay: 1.2 }}
           className="mt-16"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center" style={{ color: '#8B1538' }}>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center" style={{ color: '#FAFAF5' }}>
             Event Flow
           </h2>
           
@@ -197,8 +197,8 @@ export default function EOSection() {
               >
                 {/* Connector Line (except for last item) */}
                 {index < eventFlowSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-12 left-full w-full h-0.5 z-0" style={{ backgroundColor: '#8B1538', opacity: 0.3 }}>
-                    <ArrowRight className="absolute right-0 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{ color: '#8B1538' }} />
+                  <div className="hidden lg:block absolute top-12 left-full w-full h-0.5 z-0" style={{ backgroundColor: '#FAFAF5', opacity: 0.3 }}>
+                    <ArrowRight className="absolute right-0 top-1/2 transform -translate-y-1/2 h-4 w-4" style={{ color: '#FAFAF5' }} />
                   </div>
                 )}
                 
@@ -250,7 +250,7 @@ export default function EOSection() {
           transition={{ duration: 0.6, delay: 1.9 }}
           className="text-center mt-20"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#8B1538' }}>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: '#FAFAF5' }}>
             Booking & Contact
           </h2>
           

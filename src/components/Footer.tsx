@@ -10,7 +10,7 @@ export default function Footer() {
         {/* Logo Footer */}
         <div className="mb-8">
           <Image
-            src="/logos/logo-pt-badai-laut-asmara-white.png"
+            src="/logos/logo-pt.png"
             alt="PT Badai Laut Asmara"
             width={180}
             height={50}

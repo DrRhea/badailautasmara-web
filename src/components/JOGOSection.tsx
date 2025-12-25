@@ -34,8 +34,8 @@ export default function JOGOSection() {
           className="object-cover md:object-contain"
           priority
         />
-        {/* Overlay untuk readability */}
-        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(250, 250, 245, 0.85)' }}></div>
+        {/* Overlay untuk readability dengan gradasi */}
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(250, 250, 245, 0.85), rgba(139, 21, 56, 0.85))' }}></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
