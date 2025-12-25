@@ -35,7 +35,7 @@ export default function JOGOSection() {
             JOGO PRIVATE TRAINING SERVICES
           </h2>
           <div className="text-lg max-w-2xl mx-auto space-y-2" style={{ color: '#333333' }}>
-            <p>We Create Great Individual Skills</p>
+            <p>&quot;We Create Great Individual Skills&quot;</p>
             <p>Personalized one-on-one or small group training sessions tailored to your needs</p>
           </div>
         </motion.div>
