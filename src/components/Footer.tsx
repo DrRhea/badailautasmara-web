@@ -22,14 +22,16 @@ export default function Footer() {
           {/* Alamat */}
           <div>
             <h3 className="text-lg font-semibold mb-4" style={{ color: '#FAFAF5' }}>Address</h3>
-            <div className="flex flex-col items-start">
-              <MapPin className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
-              <p style={{ color: '#FAFAF5', opacity: 0.9 }}>
-                Gedung AD Premier Lt. 9, Jl. TB Simatupang 
-              </p>
-              <p>
-                No. 5, Jakarta Selatan 12550
-              </p>
+            <div className="flex items-start">
+              <MapPin className="h-5 w-5 mr-3 mt-1 shrink-0" />
+              <div>
+                <p style={{ color: '#FAFAF5', opacity: 0.9 }}>
+                  Gedung AD Premier Lt. 9, Jl. TB Simatupang 
+                </p>
+                <p>
+                  No. 5, Jakarta Selatan 12550
+                </p>
+              </div>
             </div>
           </div>
 
