@@ -76,19 +76,19 @@ export default function GallerySection() {
                 {category.images.map((image, imageIndex) => (
                   <motion.div
                     key={imageIndex}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: categoryIndex * 0.2 + imageIndex * 0.1 }}
                     className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border"
-                    style={{ borderColor: '#8B1538' }}
-                  >
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      fill
-                      className="object-cover hover:scale-110 transition-transform duration-300"
-                    />
+              style={{ borderColor: '#8B1538' }}
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                className="object-cover hover:scale-110 transition-transform duration-300"
+              />
                   </motion.div>
                 ))}
               </div>

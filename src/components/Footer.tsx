@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="flex items-start">
               <MapPin className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
               <p style={{ color: '#FAFAF5', opacity: 0.9 }}>
-                Gedung AD Premier Lt.9, Jl. TB Simatupang No.5, Jakarta Selatan
+                Gedung AD Premier Lt. 9, Jl. TB Simatupang No. 5, Jakarta Selatan
                 12550
               </p>
             </div>
