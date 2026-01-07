@@ -102,7 +102,7 @@ export default function CoachesSection() {
           className="text-center mb-16 sm:mb-20"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ color: '#FAFAF5' }}>
-            Meet The Team Coaches
+            Meet The Founder
           </h2>
           <p className="text-lg sm:text-xl max-w-2xl mx-auto" style={{ color: '#FAFAF5' }}>
             Professional coaching team with Sports Science
