@@ -16,7 +16,6 @@ export default function Navbar() {
     { name: "Academy", href: "#academy" },
     { name: "Private Training Services", href: "#private" },
     { name: "Event Organizer", href: "#eo" },
-    { name: "Coach Profile", href: "#coach" },
     { name: "Gallery", href: "#gallery" },
   ];
 
