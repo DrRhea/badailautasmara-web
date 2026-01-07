@@ -83,8 +83,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logos/logo-pt-badai-laut-asmara.png",
-    apple: "/logos/logo-pt-badai-laut-asmara.png",
+    icon: "/logos/logo-pt.png",
+    apple: "/logos/logo-pt.png",
   },
   verification: {
     // Add Google Search Console verification code here when available
