@@ -12,7 +12,7 @@ const founder = {
     "President Director at PT BADAI LAUT ASMARA",
     "Chairman of Yayasan Abang None Jakarta Olahraga",
     "President of Pemuda Olahraga Bersatu",
-    "Indonesian - Actor"
+    "Actor"
   ],
   specialization: [],
   photo: "/images/coaches/foto-swara-new.png",
@@ -104,10 +104,10 @@ export default function CoachesSection() {
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ color: '#FAFAF5' }}>
             Meet The Founder
           </h2>
-          <p className="text-lg sm:text-xl max-w-2xl mx-auto" style={{ color: '#FAFAF5' }}>
-            Professional coaching team with Sports Science
-            educational background
-          </p>
+          <div className="text-lg sm:text-xl max-w-2xl mx-auto space-y-2" style={{ color: '#FAFAF5' }}>
+            <p>Visionary leader behind JOGO, who has been building and developing the organization since 2007, with a long-term commitment to sports excellence, leadership, and youth development.</p>
+            <p>We create great individual skills.</p>
+          </div>
         </motion.div>
 
         {/* Founder Card - Separate */}
